@@ -1,0 +1,3 @@
+Esiste un lower bound della quantità di ingrediente per la quale le materie prime si possano aggregare tra loro oppure è sufficiente che la proporzione tra le materie prime sia rispettata, indipendentemente dalla loro quantità?
+
+Nel caso di risposta negativa, sarà necessario indagare se questo lower bound varii da ingrediente ad ingrediente e, nel caso, costruire un vettore che andrà poi a comporre un vincolo nei modelli di ottimizzazione proposti.

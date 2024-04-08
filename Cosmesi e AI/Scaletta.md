@@ -1,0 +1,34 @@
+- Introduzione
+	- Definizione del problema
+		- Blacklist
+		- 
+	- Soluzione proposta
+	- Overview
+- Background
+	- Programmazione matematica
+	- Teoria dei Grafi (?)
+	- Chimica
+		- Formule qualiquantitative
+	- Intelligenza Artificiale
+- Tools e Environment
+	- HeidiSQL/Antares
+	- Python
+	- Solutore
+	- 
+- Modelli
+	- ...
+- Analisi Sperimentale
+	- Data Preprocessing
+		- Elencazione tabelle di interesse
+		- Costruzione schema ER semplificato
+		- Strutturazione della gerarchia prodotto - ingrediente - materia prima
+		- Omogeneità domini di interesse
+		- Omogeneità unità di misura
+		- [[Normalizzazione unità di misura modello]]
+	- [[Approccio Naif]]
+		- Modello di ottimizzazione
+	- Similarity Networks
+	- Hopfield Networks
+- Risultati ed osservazioni
+- Sviluppi futuri
+- Appendix
