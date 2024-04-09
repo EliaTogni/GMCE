@@ -1,0 +1,10 @@
+- jos_cbl_checkinci
+- jos_cbl_checkinci_dett
+- jos_cbl_checkmast
+- jos_cbl_formumast
+- jos_cbl_formumast_componenti
+- jos_cbl_formumast_inci
+- jos_cbl_formumast_incistampe
+- jos_cbl_metallipesanti
+- jos_cbl_prodotti
+- jos_cbl_prodotti_cmp
