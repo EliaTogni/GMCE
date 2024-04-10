@@ -20,10 +20,11 @@
 - Analisi Sperimentale
 	- Data Preprocessing
 		- [[Elencazione tabelle di interesse]]
-		- Costruzione schema ER semplificato
+		- [[Costruzione schema ER semplificato]]
 		- [[Strutturazione della gerarchia prodotto - ingrediente - materia prima]]
+		- [[Analisi campi di interesse]]
 		- Omogeneità domini di interesse
-		- Omogeneità unità di misura
+		- [[Omogeneità unità di misura]]
 		- [[Normalizzazione unità di misura modello]]
 	- [[Approccio Naif]]
 		- Modello di ottimizzazione

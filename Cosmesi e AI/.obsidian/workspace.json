@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fee0e683ca824ef7",
+        "id": "fae33ff0327cbe79",
         "type": "tabs",
         "children": [
           {
-            "id": "b684f4a67981f8e2",
+            "id": "4f0afa57be736f76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scaletta.md",
+                "file": "Analisi campi di interesse.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,11 +22,11 @@
         ]
       },
       {
-        "id": "7236f5682aa7a1df",
+        "id": "2f6b957fe7fb9260",
         "type": "tabs",
         "children": [
           {
-            "id": "c7db7cb203145a78",
+            "id": "abcd3f2b7effa17f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8427ee185d9194cc",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Elencazione tabelle di interesse.md",
+                "file": "Analisi campi di interesse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Elencazione tabelle di interesse.md",
+                "file": "Analisi campi di interesse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Elencazione tabelle di interesse.md"
+                "file": "Analisi campi di interesse.md"
               }
             }
           }
@@ -164,13 +165,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7db7cb203145a78",
+  "active": "4f0afa57be736f76",
   "lastOpenFiles": [
+    "CodiceIDProdotti.jpeg",
     "Scaletta.md",
-    "Elencazione tabelle di interesse.md",
+    "Analisi campi di interesse.md",
     "Strutturazione della gerarchia prodotto - ingrediente - materia prima.md",
-    "Approccio Naif.md",
+    "Costruzione schema ER semplificato.md",
+    "Elencazione tabelle di interesse.md",
     "Normalizzazione unità di misura modello.md",
+    "Omogeneità unità di misura.md",
+    "Approccio Naif.md",
     "Welcome.md"
   ]
 }
