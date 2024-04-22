@@ -33,3 +33,12 @@
 - Risultati ed osservazioni
 - Sviluppi futuri
 - Appendix
+
+------------------------------------------------------------------------
+
+# To do
+
+- [ ] Elenco attributi + domini di interesse per ogni tabella di interesse
+- [ ] Aggiunta attributi + domini a schema ER
+- [ ] Creazione tabella ingrediente + qualiquantitative
+- [ ] Creazione tabella formula + ingrediente

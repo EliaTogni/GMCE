@@ -148,15 +148,15 @@
   },
   "active": "5da924d042de4636",
   "lastOpenFiles": [
-    "CodiceIDProdotti.jpeg",
-    "Costruzione schema ER semplificato.md",
-    "Scaletta.md",
-    "Elencazione tabelle di interesse.md",
-    "Analisi campi di interesse.md",
-    "Strutturazione della gerarchia prodotto - ingrediente - materia prima.md",
-    "Normalizzazione unità di misura modello.md",
     "Omogeneità unità di misura.md",
+    "Normalizzazione unità di misura modello.md",
+    "Elencazione tabelle di interesse.md",
+    "Costruzione schema ER semplificato.md",
+    "CodiceIDProdotti.jpeg",
     "Approccio Naif.md",
+    "Analisi campi di interesse.md",
+    "Scaletta.md",
+    "Strutturazione della gerarchia prodotto - ingrediente - materia prima.md",
     "Welcome.md"
   ]
 }
