@@ -38,7 +38,13 @@
 
 # To do
 
-- [ ] Elenco attributi + domini di interesse per ogni tabella di interesse
+- [x] Elenco attributi + domini di interesse per ogni tabella di interesse
 - [ ] Aggiunta attributi + domini a schema ER
 - [ ] Creazione tabella ingrediente + qualiquantitative
 - [ ] Creazione tabella formula + ingrediente
+- [ ] Query prodotti unique codazie e pr_categoria
+- [ ] Campo che può essere nullo sql come si indica?
+- [ ] dd_numcas prodotti_cmp cosa è?
+- [ ] in formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori?
+- [ ] Cosa comporta formumast_inci.fi_ordine?
+- [ ] 
