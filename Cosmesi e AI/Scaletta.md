@@ -39,12 +39,22 @@
 # To do
 
 - [x] Elenco attributi + domini di interesse per ogni tabella di interesse
-- [ ] Aggiunta attributi + domini a schema ER
+- [x] Aggiunta attributi + domini a schema ER
+- [x] Script download ER to pc
+- [x] Rifare ER
+- [ ] Risolvere problema vpn portatile
 - [ ] Creazione tabella ingrediente + qualiquantitative
 - [ ] Creazione tabella formula + ingrediente
 - [ ] Query prodotti unique codazie e pr_categoria
 - [ ] Campo che può essere nullo sql come si indica?
-- [ ] dd_numcas prodotti_cmp cosa è?
 - [ ] in formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori?
 - [ ] Cosa comporta formumast_inci.fi_ordine?
+
+
+# Domande
+
+- [ ] dd_numero (prodotti_cmp) cosa significa?
+- [ ] dd_numcas (prodotti_cmp) cosa significa?
+- [ ] dd_posizione (prodotti_cmp) cosa significa?
+- [ ] Ingredienti in formule non posso ancora vederli
 - [ ] 

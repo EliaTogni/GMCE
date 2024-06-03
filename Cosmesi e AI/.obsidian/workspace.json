@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "8427ee185d9194cc",
@@ -149,14 +150,15 @@
   "active": "5da924d042de4636",
   "lastOpenFiles": [
     "Scaletta.md",
-    "Costruzione schema ER semplificato.md",
-    "Omogeneità unità di misura.md",
-    "Normalizzazione unità di misura modello.md",
-    "Elencazione tabelle di interesse.md",
-    "CodiceIDProdotti.jpeg",
-    "Approccio Naif.md",
     "Analisi campi di interesse.md",
+    "Omogeneità unità di misura.md",
+    "Costruzione schema ER semplificato.md",
+    "Approccio Naif.md",
+    "Elencazione tabelle di interesse.md",
     "Strutturazione della gerarchia prodotto - ingrediente - materia prima.md",
+    "Normalizzazione unità di misura modello.md",
+    "ERCosmesi.drawio.png",
+    "CodiceIDProdotti.jpeg",
     "Welcome.md"
   ]
 }

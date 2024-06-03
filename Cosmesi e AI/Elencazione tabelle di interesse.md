@@ -4,9 +4,7 @@
 - jos_cbl_formumast_inciestesa
 - jos_cbl_prodotti
 - jos_cbl_prodotti_cmp
-- formumast_trasformazioni
-
-E alcune tabelle necessarie per fare i Join, che non so ancora come fare.
+- formumast_trasformazioni (?)
 
 | ta_nomedb                         | ta_descri                          | ta_esterna |     |
 | --------------------------------- | ---------------------------------- | ---------- | --- |
