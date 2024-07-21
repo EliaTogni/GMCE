@@ -1,1 +1,0 @@
-Ogni prodotto è definito da una formula, composta da materie prime. Alcune di queste matere prime sono definite da formule a loro volta. La struttura risultate è un albero che dovrebbe avere altezza massima $2$ ma non ho ancora esplorato i dati.

@@ -1,35 +1,39 @@
-- Introduzione
+- [[Introduzione]]
 	- Definizione del problema
+		- Formulatore
 		- Blacklist
-		- 
 	- Soluzione proposta
 	- Overview
-- Background
-	- Programmazione matematica
-	- Teoria dei Grafi (?)
+- [[Theoretical Background]]
 	- Chimica
-		- Formule qualiquantitative
-	- Intelligenza Artificiale
+		- Nomenclatura Internazionale degli Ingredienti Cosmetici
+		- Formule Qualiquantitative
+	- Intelligenza Artificiale e Machine Learning
+		- Unsupervised Learning
+			- KMeans (?)
+		- Supervised Learning
+			- Multi Layer Neural Networks
 - Tools e Environment
 	- HeidiSQL/Antares
 	- Python
-	- Solutore
-	- 
-- Modelli
-	- ...
-- Analisi Sperimentale
+	- Solutore (?)
+	-  Colab
+- [[GMCE Dataset]]
+	- Struttura del Dataset
+		- Schema ER
+		- Tabelle
 	- Data Preprocessing
-		- [[Elencazione tabelle di interesse]]
-		- [[Costruzione schema ER semplificato]]
-		- [[Strutturazione della gerarchia prodotto - ingrediente - materia prima]]
-		- [[Analisi campi di interesse]]
-		- Omogeneità domini di interesse
-		- [[Omogeneità unità di misura]]
-		- [[Normalizzazione unità di misura modello]]
+		- Metodologia
+		- ...
+- Modelli
+	- Clustering Model
+	- Multi Layer Neural Networks
+- Analisi Sperimentale
+	- Nested Cross Validation
+	- Metriche di Valutazione delle Performance
+	- 
 	- [[Approccio Naif]]
 		- Modello di ottimizzazione
-	- Similarity Networks
-	- Hopfield Networks
 - Risultati ed osservazioni
 - Sviluppi futuri
 - Appendix
@@ -43,18 +47,68 @@
 - [x] Script download ER to pc
 - [x] Rifare ER
 - [ ] Risolvere problema vpn portatile
-- [ ] Creazione tabella ingrediente + qualiquantitative
+- [x] Creazione tabella ingrediente + qualiquantitative
 - [ ] Creazione tabella formula + ingrediente
-- [ ] Query prodotti unique codazie e pr_categoria
-- [ ] Campo che può essere nullo sql come si indica?
-- [ ] in formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori?
-- [ ] Cosa comporta formumast_inci.fi_ordine?
+- [x] Query prodotti unique codazie e pr_categoria
+- [x] Campo che può essere nullo sql come si indica?
+- [ ] Decidere se usare qtainci e qtaincicompe
+- [x] Nome inci diverso da nome CTFA si aggiungono entrambi: come gestire? Cerco nome inci in prodotti_cmp
+- [x] fo_codice col punto da ignorare -> regulatory (sono quelle ufficiali) -> formule massaggiate da ignorare
+- [x] Check due formule, una con codice con punto e una senza
+- [ ] in formumast, se id_prodotto è collegato a prodotti, può essere o una formula o un semilavorato. 
+- [ ] Fare un check per id_componente == id_prodotto e 100% qualità impiego in un solo componente, lo tolgo
+- [x] Sostituire nome inci ctfa con solo nome inci
+- [x] Check per differenti inci ctfa con stesso nome inci
+- [x] Tabella Ancorotti CSV
+- [x] Estrarre codifiche da Ancorotti
+- [x] Lista Codici
+- [x] Mail GMCE x codici
+- [x] Case Sensitive nomi INCI
+- [x] Check duplicati nomi INCI
+- [x] Join INCI
+- [x] Spunti vari ad Overleaf
+- [ ] Tradurre Cluster in italiano
+- [x] Modificare Outline Obsidian
+- [x] Download nuovi CSV GMCE
+- [x] Scrivere nuove Query su Drive
+- [x] Caricare nuovi CSV su Drive
+- [x] Check stesso INCI più occorrenze
+- [x] Check funzione somma
+- [x] Conversione INCI in float 
+- [x] Esclusione somme range 99 < x < 101
+- [x] Modello Clustering base
+- [x] Plot PCA Cluster
+- [x] Togliere CODAZIE
+- [x] Rifare ER
+- [x] Check lunghezza codici
+- [x] Strutturare final ordine
+- [x] Check secondo carattere
+- [x] Check lunghezza lista codici 
+- [ ] Scrivere una breve definizione di ogni tabella in GMCE Dataset
+- [ ] Gestire gerarchia prodotti
+- [ ] Data Unbalancing paragrafo
+- [ ] Formula Unbalancing Data multiclasse
+- [ ] Spiegare risultati clustering
+- [ ] Spiegare risultati mlnn
+- [x] Ispezione elementi formule
+- [x] Mail GianMaria e Ceselli
+- [ ] Query Drive Formumast_componenti
+- [ ] Aggiungere componenti a er
+- [ ] 
 
+
+-----
 
 # Domande
 
-- [ ] dd_numero (prodotti_cmp) cosa significa?
-- [ ] dd_numcas (prodotti_cmp) cosa significa?
-- [ ] dd_posizione (prodotti_cmp) cosa significa?
-- [ ] Ingredienti in formule non posso ancora vederli
-- [ ] 
+- [x] dd_numero (prodotti_cmp) cosa significa? (ordinamento, irrilevante)
+- [x] dd_numcas (prodotti_cmp) cosa significa? numero del cas del prodotto, identificativo numerico di sostanza chimica
+- [x] dd_posizione (prodotti_cmp) cosa significa? )irrilevante, ordinamento)
+- [x] Ingredienti in formule non posso ancora vederli
+- [x] Cosa comporta formumast_inci.fi_ordine?
+- [x] Quale è la differenza tra inci ed inciestesa?
+- [ ] CSV troppo sparso, come risolvere nel modello?
+- [x] Se Fo_codice non è di ancorotti, c'è modo di sapere il significato?
+- [x] Differenza inci inciestesa
+- [x] id_inci_master è la materia prima a cui è sommato quello che deve soddisfare regole inci (formumast inciestesa id_master = 603 example)
+- [ ] n formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori?
