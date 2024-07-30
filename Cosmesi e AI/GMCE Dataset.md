@@ -1,6 +1,5 @@
 # Struttura del Dataset
 
-
 | ta_nomedb                         | ta_descri                          | ta_esterna |     |
 | --------------------------------- | ---------------------------------- | ---------- | --- |
 | __cbl_formumast_inciestesa        | Inciestesa                         | 0          |     |
@@ -92,13 +91,13 @@
 | jos_cbl_prodotti_cmp             | jos_cbl_prodotti             | ==INNER JOIN==      | jos_cbl_prodotti_cmp.id_master=jos_cbl_prodotti.id                          |
 
 
-![[ERCosmesi.drawio.png |]]
+![[ERCosmesi.drawio.png]]
 
 -----
 
 # Tabelle
 ### Formumast
-La tabella descrive
+La tabella descrive le caratteristiche del prodotto ottenuto dalla formula.
 
 | Attribute      | Meaning                                                                                                                                                                          |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -120,114 +119,151 @@ La tabella descrive
 -----
 
 ### Formumast_inci
+La tabella descrive le diverse INCI che compongono la formula QQ del prodotto.
 
-| Attribute       | Meaning                                                                                                                                                      |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id              | Identifier della tupla                                                                                                                                       |
-| id_master       | Identifier della tupla di formumast a cui fa riferimento la tupla in questione                                                                               |
-| fi_inciname     | Nome inci del qq, appare nei qq della formula di un prodotto                                                                                                 |
-| fi_qtainci      |                                                                                                                                                              |
-| fi_qtaincicompe | Qta dell'inci del qq, appare nei qq della formula di un prodotto                                                                                             |
-| id_prodotto     |                                                                                                                                                              |
-| id_prodotto_cmp |                                                                                                                                                              |
-| id_inci_master  | Codice dell'Inci a cui l'Inci della tupla attuale viene sommato al fine di soddisfare determinate regole Inci (formumast inciestesa id_master = 603 example) |
+| Attribute       | Meaning                                                                                                                                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id              | Identifier della tupla                                                                                                                                                                               |
+| id_master       | Identifier della tupla di formumast a cui fa riferimento la tupla in questione                                                                                                                       |
+| fi_inciname     | Nome inci del qq, appare nei qq della formula di un prodotto                                                                                                                                         |
+| fi_qtainci      | Qta dell'inci del qq, appare nei qq della formula di un prodotto. La differenza con fi_qtaincicompe é che alcuni inci si modificano post lavorazione. Questo campo fa riferimento al pre lavorazione |
+| fi_qtaincicompe | Qta dell'inci del qq, appare nei qq della formula di un prodotto. La differenza con fi_qtainci é che alcuni inci si modificano post lavorazione. Questo campo fa riferimento al post lavorazione     |
+| id_prodotto     | Identifier del prodotto a cui questa formula fa riferimento                                                                                                                                          |
+| id_prodotto_cmp |                                                                                                                                                                                                      |
+| id_inci_master  | Codice dell'Inci a cui l'Inci della tupla attuale viene sommato al fine di soddisfare determinate regole Inci (formumast inciestesa id_master = 603 example)                                         |
 
 -----
 
 ### Formumast_inciestesa
+La tabella descrive le diverse INCI che compongono la formula QQ del prodotto.
 
-| Attribute       | Meaning                                                                                                                                                      |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id              | Identifier della tupla                                                                                                                                       |
-| id_master       | Identifier della tupla di formumast a cui fa riferimento la tupla in questione                                                                               |
-| fi_inciname     | Nome inci del qq, appare nei qq della formula di un prodotto                                                                                                 |
-| fi_qtainci      |                                                                                                                                                              |
-| fi_qtaincicompe | Qta dell'inci del qq, appare nei qq della formula di un prodotto                                                                                             |
-| id_prodotto     |                                                                                                                                                              |
-| id_prodotto_cmp |                                                                                                                                                              |
-| id_inci_master  | Codice dell'Inci a cui l'Inci della tupla attuale viene sommato al fine di soddisfare determinate regole Inci (formumast inciestesa id_master = 603 example) |
-
-Check via colab per differenze con formumast_inci
+| Attribute       | Meaning                                                                                                                                                                                                                                                                                                                                                                                                   |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id              | Identifier della tupla                                                                                                                                                                                                                                                                                                                                                                                    |
+| id_master       | Identifier della tupla di formumast a cui fa riferimento la tupla in questione                                                                                                                                                                                                                                                                                                                            |
+| fi_inciname     | Nome inci del qq, appare nei qq della formula di un prodotto                                                                                                                                                                                                                                                                                                                                              |
+| fi_qtainci      | Qta dell'inci del qq, appare nei qq della formula di un prodotto. La differenza con fi_qtaincicompe é che alcuni inci si modificano post lavorazione. Questo campo fa riferimento al pre lavorazione. A differenza della tabella precedente, fi_qtainci contiene tutti i dati completi non sommati che fan parte della formula, per ricollegarsi singolarmente ad ogni ingrediente di ogni materia prima. |
+| fi_qtaincicompe | Qta dell'inci del qq, appare nei qq della formula di un prodotto. La differenza con fi_qtainci é che alcuni inci si modificano post lavorazione. Questo campo fa riferimento al post lavorazione                                                                                                                                                                                                          |
+| id_prodotto     | Identifier del prodotto a cui questa formula fa riferimento                                                                                                                                                                                                                                                                                                                                               |
+| id_prodotto_cmp |                                                                                                                                                                                                                                                                                                                                                                                                           |
+| id_inci_master  | Codice dell'Inci a cui l'Inci della tupla attuale viene sommato al fine di soddisfare determinate regole Inci (formumast inciestesa id_master = 603 example)                                                                                                                                                                                                                                              |
 
 -----
 
 ### Prodotti
+Elenco di tutti i prodotti aventi una formula associata.
 
-| Attribute      | Meaning                |
-| -------------- | ---------------------- |
-| id             | Identifier della tupla |
-| codiceext      |                        |
-| pr_codice      |                        |
-| pr_descri      |                        |
-| pr_versione    |                        |
-| pr_unimis      |                        |
-| pr_classe      |                        |
-| pr_categoria   |                        |
-| pr_famiglia    |                        |
-| pr_stato       |                        |
-| pr_rischio     |                        |
-| pr_ingrediente |                        |
-| pr_formulacode |                        |
+| Attribute      | Meaning                                                                                                                      |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| id             | Identifier della tupla                                                                                                       |
+| codiceext      | Concatenazione di pr_codice e pr_versione                                                                                    |
+| pr_codice      | Corrisponde a formumast.fo_codice                                                                                            |
+| pr_descri      | Descrizione del prodotto                                                                                                     |
+| pr_versione    | Corrisponde a formumast.fo_versione                                                                                          |
+| pr_unimis      | Unitá di misura                                                                                                              |
+| pr_classe      | Sigle ==??==                                                                                                                 |
+| pr_categoria   | 5 diverse voci: semilavorato, materiale confezionamento, materia_prima, **meteria_prima** e prodotto_finito (e spazio vuoto) |
+| pr_famiglia    | Macrofamiglia di ogni prodotto (66 risultati non null, 85k tuple vuote)                                                      |
+| pr_stato       | ==??==                                                                                                                       |
+| pr_rischio     | ==??== (52 diversi valori)                                                                                                   |
+| pr_ingrediente | ==??== due diversi valori: 0 e 2                                                                                             |
+| pr_formulacode | ==??== simile a pr_codice                                                                                                    |
 
 -----
 
 ### Prodotti_cmp
+Prodotti composizione ==mi sfugge a cosa serva==
 
-| Attribute        | Meaning                |
-| ---------------- | ---------------------- |
-| id               | Identifier della tupla |
-| codiceext        |                        |
-| id_master        |                        |
-| dd_descri        |                        |
-| dd_numero        |                        |
-| dd_numcas        |                        |
-| dd_posizione     |                        |
-| dd_inciname      |                        |
-| dd_functions     |                        |
-| dd_funzionereale |                        |
-
+| Attribute        | Meaning                                |
+| ---------------- | -------------------------------------- |
+| id               | Identifier della tupla                 |
+| codiceext        |                                        |
+| id_master        | identifier del prodotto di riferimento |
+| dd_descri        |                                        |
+| dd_numero        |                                        |
+| dd_numcas        |                                        |
+| dd_posizione     |                                        |
+| dd_inciname      |                                        |
+| dd_functions     |                                        |
+| dd_funzionereale |                                        |
 
 -----
 
 ### Formudett
 La tabella descrive...
 
-| Attribute | Meaning                                                      |
-| --------- | ------------------------------------------------------------ |
-| id        | Identifier della tupla                                       |
-| id_master | Identifier della formula master proveniente da **formumast** |
-| fd_ordine | Dettagli dell'ordine della formula                           |
+| Attribute     | Meaning                                                      |
+| ------------- | ------------------------------------------------------------ |
+| id            | Identifier della tupla                                       |
+| id_master     | Identifier della formula master proveniente da **formumast** |
+| id_componente | Credo faccia riferimento a prodotti                          |
+| fd_ordine     | Dettagli dell'ordine della formula, irrilevante              |
+| fd_qta        | La quantitá percentuale del componente.                      |
+| fd_attivo     | ==??==                                                       |
 
 -----
 
-Screen 192.168.223.35/formuleAI/
+### Formumast_componenti
+La tabella descrive...
 
+| Attribute     | Meaning                                                      |
+| ------------- | ------------------------------------------------------------ |
+| id            | Identifier della tupla                                       |
+| id_master     | Identifier della formula master proveniente da **formumast** |
+| id_componente | ==??==                                                       |
+| fd_ordine     | Dettagli dell'ordine della formula, irrilevante              |
+| fd_qta        | La quantitá percentuale del componente.                      |
 
 -----
 
 # Strutturazione della gerarchia
+Ogni prodotto è definito da una formula, composta da materie prime. Alcune di queste materie prime sono definite da formule a loro volta. La struttura risultate è un albero con altezza massima 2.
 
-Ogni prodotto è definito da una formula, composta da materie prime. Alcune di queste matere prime sono definite da formule a loro volta. La struttura risultate è un albero che dovrebbe avere altezza massima $2$ ma non ho ancora esplorato i dati.
+prodotti -> formumast -> (componenti $\vee$ formudett si completano per i semilavorati. Formudett ha dentro le materie prime dei semilavorati mentre componenti ha i semilavorati) -> formumast_inci -> inciestesa (tutti i dati completi non sommati che fan parte della formula, per ricollegarsi singolarmente ad ogni ingrediente di ogni materia prima).
 
-prodotti -> formumast -> (componenti $\vee$ formudett si completano per i semilavorati. Formudett ha dentro le materie prime dei semilavorati mentre componenti ha i semilavorati) -> formumast_inci -> inciestesa (tutti i dati completi non sommati che fan parte della formula, per ricollegarsi singolarmente ad ogni ingrediente di ogni materia prima)
+![[GerarchiaFormule.drawio.png]]
 
-immagine gerarchia tramite draw.io
+Qual é la differenza tra semilavorato e materia prima?
+
+![[ScreenFormule.png|900]]
+
+La landing page con l'elenco delle formule si presenta cosí. Ogni singola formula, definita da un codice, rimanda ad un'ulteriore pagina che estende ulteriormente le informazioni riguardanti quella stessa formula.
+
+![[ScreenFormulaComponenti.png|1000]]
+
+==formumast_componenti o formudett?==
+I dettagli di ogni formula sono estratti da jos_cbl_formumast. Per quanto riguarda i componenti di ogni formula, le componenti sono estratte da jos_cbl_formumast_componenti, facendo un join con jos_cbl_formumast. Il campo id_master in componenti é la chiave esterna che permette il join con id di formumast. In componenti, il campo codiceext contiene la concatenazione tra formumast.fo_codice e il nome del componente.
+
+![[ScreenFormulaMP.png|1000]]
+
+secondo screenshot
+
+Per quanto riguarda le materie prime, spesso e volentieri l'elenco risulta uguale alla formula. Tuttavia, a volte l'elenco differisce per alcune voci in piú (e.g., APC026:2919V:00-KKK.)
+==check codice in dataset e controllare id_inci_master==
+==?? aggiunta spiegazione differenza==
 
 -----
 
 ## Ancorotti
-
 ![[CodiceIDProdotti.jpeg]]
 
-A partire dal contenuto di formumast.fo_codice, splitto la stringa seguendo le indicazioni dell'immagine sopra riportata.
-Questi saranno i valori finali che il modello dovrà essere in grado di predire a partire dalla formula chimica.
+A partire dal contenuto di formumast.fo_codice, splitto la stringa seguendo le indicazioni dell'immagine sopra riportata. Questi saranno i valori finali che il modello dovrà essere in grado di predire a partire dalla formula chimica.
 
 La costruzione del dataset si basa sull'iniziale creazione della pivot table a partire da formumast_inciestesa, avente come indice l'id_master e come colonne tutti i possibili nomi inci. Già qui noto delle ripetizioni a causa della tecnica utilizzata per riempire il dataset a monte: i nomi inci sono in realtà una concatenazione del nome inci effettivo e della nomenclatura ctfa utilizzata negli USA. Quindi effettuo un join con prodotti_cmp, per estrarre i nomi inci corretti. Il problema che deriva da questa sostituzione è la presenza di inciname differenti che fanno riferimento allo stesso inci (e.g., **'CHAMOMILLA RECUTITA FLOWER EXTRACT (CHAMOMILLA RECUTITA (MATRICARIA) FLOWER EXTRACT)'** and
  **'CHAMOMILLA RECUTITA FLOWER EXTRACT (Chamomilla Recutita \n(Matricaria) Flower Extract)'** )
 
+-----
+
+## Altre Formule
+- Formula con @: formule solo per il regolatorio (diverse rispetto a quelle che sono state prodotte). Sono molto vecchie.
+- Formule con BA, VA, SS, GT, LD ecc sono formule di laboratorio, non ancora validate. In genere le prime due lettere sono le iniziali del ricercatore che ha creato la formula, poi c'è il numero di progetto (MF202300093)
+- PBABP00749C, pre-bulk, è un semilavorato che poi viene inserito in una formula completa (in questo caso la ABP00749C sarà costituito da PBABP00749C e da un altro semilavorato che in genere si chiama ABPGEL seguito da un numero)
+- SFC006004Y-01 sono formule vecchie importate dal vecchio gestionale, uguali alle are me senza i puntini che separano texture, colore, stile
+
+-----
+
 # Data Preprocessing
 ## Metodologia
-
 ## Sbilanciamento dei Dati
 I classificatori solitamente assumono che i dati di addestramento siano composti da dati bilanciati e da un costo di misclassificazione uguale, cioè le conseguenze o i costi associati a un particolare tipo di errore nella classificazione sono gli stessi per tutte le classi. In altre parole, il classificatore tratta tutti i tipi di errori (falsi positivi e falsi negativi) come ugualmente costosi\cite{Frasca}.
 
@@ -235,6 +271,50 @@ I classificatori naif tentano di ridurre quantità globali come il tasso di erro
 
 Ma quando un dataset è sbilanciato? Si assuma che i punti siano vettori $x \in \mathbb{R}^n$. È possibile distinguere tra **rarità relativa** e **rarità assoluta**. Con il termine rarità relativa si identificano i casi in cui la classe minoritaria è numericamente inferiore, ma non necessariamente rara, ad esempio, $10^6 \vert 10^3$. In questo caso, la classe minoritaria può essere accuratamente appresa. Con il termine rarità assoluta si identificano i casi in cui la classe minoritaria non è solo numericamente inferiore, ma anche non ben definita, ad esempio, $10^3 \vert 1$.
 
-euristica sbilanciamento multiclasse
-
 Si possono ottenere buoni risultati, indipendentemente dalla sproporzione delle classi, se entrambi i gruppi sono ben rappresentati e provengono da distribuzioni non sovrapposte\cite{Johnson}
+
+Il rapporto tra il numero di istanze della classe più frequente e il numero di istanze della classe meno frequente viene chiamato **Rapporto di Sbilanciamento (Imbalance Ratio)**. Per un dataset multiclasse, si possono calcolare i rapporti tra la classe più comune e ciascuna delle altre classi.
+
+### Datasets
+#### Dataset per il Modello Decisionale
+Il DataFrame in questione, a partire da una formula scelta, é cosí strutturato:
+
+|          | Componente $1$ | ... | Componente $m$ | TOTALE                  |
+| -------- | -------------- | --- | -------------- | ----------------------- |
+| INCI $1$ | $x_{1,1}$      | ... | $x_{1,m}$      | $\sum_{i=1}^m x_{1, i}$ |
+| INCI $2$ | $x_{2,1}$      | ... | $x_{2, m}$     | $\sum_{i=1}^m x_{2, i}$ |
+| ...      | ...            | ... | ...            |                         |
+| INCI $n$ | $x_{n,1}$      | ... | $x_{n, m}$     | $\sum_{i=1}^m x_{n, i}$ |
+
+dove, nella colonna TOTALE, é contenuta la composizione qualiquantitativa degli INCI della formula in questione.
+
+Per ottere ció, innanzitutto, é necessario creare un primo DataFrame strutturato nel seguente modo:
+
+| Formula | Componente $1$ | ... | Componente $m$ | TOTALE  |
+| ------- | -------------- | --- | -------------- | ------- |
+|         | $x_{1,1}$      | ... | $x_{1,m}$      | $100\%$ |
+|         | $x_{2,1}$      | ... | $x_{2, m}$     | $100\%$ |
+| ...     | ...            | ... | ...            | ...     |
+|         | $x_{n,1}$      | ... | $x_{n, m}$     | $100\%$ |
+
+Per ottere ció, eseguo un inner join tra _formumast_ e _formumast_componenti_, rimuovendo numerose colonne inutili ai fini di quest'analisi. La tabella _formumast_componenti_ non contiene il corretto nome dei componenti ma un identifier seriale. Di conseguenza, é necessario un ulteriore join tra la tabella ottenuta precedentemente e _prodotti_. Al risultato di questo merge viene applicato un pivot: la colonna _fo_codice_ viene utilizzata come indice del nuovo DataFrame. Le colonne del nuovo DF sono tutti i valori della colonna _pr_codice_, ovvero i nomi dei componenti. Il valore contenuto nelle celle é preso da _fs_qta_, aggregato tramite la funzione _first_ solo la prima occorrenza della coppia $\langle fo\_codice, pr\_codice \rangle$). 
+
+![[Tabella1.png]]
+
+Ora necessito di un DataFrame contenente ogni diversa componente e la scomposizione in INCI di tale componente. Le componenti di ogni prodotto sono contenute in _prodotti_cmp_, dove il campo di interesse é _dd_percpart_. 
+
+![[Prodotti_Cmp.PNG]]
+
+Tramite un inner join con _prodotti_, estraggo sia il codice sia la categoria di tale prodotto.
+
+immagine tmp3 pd merge tmp2 prodotti
+
+Creo una lista contenente tutti i metalli pesanti e li rimuovo, in quanto la loro percentuale di presenza é giá sommata agli altri INCI. Tenerli significherebbe avere un totale superiore al 100%
+
+
+
+==la domanda ora é se, al fine di costruire la tabella desiderata, io debba considerare tutte le categorie (materia prima o semilavorato) o solo semilavorato.
+
+Mi aspettavo inoltre che la percpart delle materie prime fosse sempre $100\%$, ma non é cosí. 
+
+-----
