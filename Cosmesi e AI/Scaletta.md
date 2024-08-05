@@ -117,13 +117,13 @@
 - [x] Differenza inci inciestesa
 - [x] id_inci_master è la materia prima a cui è sommato quello che deve soddisfare regole inci (formumast inciestesa id_master = 603 example)
 - [x] id_componente in formumast_componenti a cosa si riferisce? (id prodotti)
-- [ ] Differenza tra formudett e componenti in termini di database? check gmce dataset
-- [ ] Differenza tra formudett e componenti in termini di sito web
-- [ ] In inciestesa cosa dovrei avere in fi_qtainci? nel dettaglio SELECT * FROM jos_cbl_formumast_inciestesa WHERE id_inci_master != 0
-- [ ] Significato di prodotti_cmp? prodotti_composizione (dd)
-- [ ] Check con Daniele sul significato di tutti i campi 
-- [ ] immagine componenti formula GMCE Dataset -> fd_qta da quale dataset arriva?
-- [ ] Quale é il miglior modo di catalogare i prodotti: se la famiglia dei prodotti (prodotti["pr_famiglia"] con 66 classi), il tipo di prodotto (seconda lettera di formumast["fo_codice"] con 15 classi) oppure la classe dei prodotti (prodotti["pr_classe"] con 25 classi). 
-- [ ] Qual é la differenza tra semilavorato e materia prima?
-- [ ] Cosa posso effettivamente mostrare nella tesi?
-- [ ] mostrare creazione dataset finale x modello e capire come mai non trova alcune formule
+- [x] Differenza tra formudett e componenti in termini di database? check gmce dataset
+- [x] Differenza tra formudett e componenti in termini di sito web
+- [x] In inciestesa cosa dovrei avere in fi_qtainci? nel dettaglio SELECT * FROM jos_cbl_formumast_inciestesa WHERE id_inci_master != 0
+- [ ] Significato di prodotti_cmp? prodotti_composizione (dd) -> uguale a fi_percpart
+- [x] Check con Daniele sul significato di tutti i campi 
+- [x] immagine componenti formula GMCE Dataset -> fd_qta da quale dataset arriva?
+- [ ] Quale é il miglior modo di catalogare i prodotti: se la famiglia dei prodotti (prodotti["pr_famiglia"] con 66 classi), il tipo di prodotto (seconda lettera di formumast["fo_codice"] con 15 classi) oppure la classe dei prodotti (prodotti["pr_classe"] con 25 classi). -> pr_classe no
+- [x] Qual é la differenza tra semilavorato e materia prima?
+- [x] Cosa posso effettivamente mostrare nella tesi?
+- [x] mostrare creazione dataset finale x modello e capire come mai non trova alcune formule

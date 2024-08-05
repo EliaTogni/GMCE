@@ -30,7 +30,6 @@ A partire da una tabella strutturata come quella soprastante, si sceglie una col
 **param percentuale** \#percentuale della formula da sostituire
 **set Totale {nINCI}** \#composizione QQ finale
 
-
 ----------
 ## VARIABILI
 **var x {nComponenti} float** \#percentuale di ciascuna componente  
