@@ -11,11 +11,9 @@
             "id": "6a67f32e9e91056c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md",
-                "mode": "source",
-                "source": false
+                "file": "Assets/Images/ERCosmesi.drawio.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md",
+                "file": "Assets/Images/ERCosmesi.drawio.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md",
+                "file": "Assets/Images/ERCosmesi.drawio.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md"
+                "file": "Assets/Images/ERCosmesi.drawio.png"
               }
             }
           }
@@ -148,11 +146,18 @@
   },
   "active": "6a67f32e9e91056c",
   "lastOpenFiles": [
-    "Cosmesi e AI/Scaletta.md",
     "Cosmesi e AI/GMCE Dataset.md",
-    "Cosmesi e AI/Modelli.md",
-    "Cosmesi e AI/Introduzione.md",
+    "Assets/Images/Tabella1.png",
+    "Assets/Images/ScreenFormule.png",
+    "Assets/Images/ScreenFormulaMP.png",
+    "Assets/Images/clusters.png",
+    "Assets/Images/CodiceIDProdotti.jpeg",
+    "Assets/Images/ERCosmesi.drawio.png",
+    "Assets/Images/GerarchiaFormule.drawio.png",
     "Assets/Images/ScreenFormulaComponenti.png",
-    "Assets/Images/ScreenFormulaMP.png"
+    "Assets/Images/Prodotti_Cmp.PNG",
+    "Cosmesi e AI/Scaletta.md",
+    "Cosmesi e AI/Modelli.md",
+    "Cosmesi e AI/Introduzione.md"
   ]
 }
