@@ -1,31 +1,19 @@
 {
   "main": {
-    "id": "f83a884b1a7e58cc",
+    "id": "a97c4c74c85e7105",
     "type": "split",
     "children": [
       {
-        "id": "9fd3b9e261db5247",
+        "id": "087c6c5faad87760",
         "type": "tabs",
         "children": [
           {
-            "id": "5da924d042de4636",
+            "id": "6a67f32e9e91056c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Theoretical Background.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b05fb44e9bb0213f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduzione.md",
+                "file": "Cosmesi e AI/Scaletta.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "455c970739d4a74a",
+    "id": "3d70165cbd960f43",
     "type": "split",
     "children": [
       {
-        "id": "8f403599a20b2bfc",
+        "id": "72c0dcfdc8c030fc",
         "type": "tabs",
         "children": [
           {
-            "id": "9b4048938123e61c",
+            "id": "d7d6ece0ac202977",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,7 +43,7 @@
             }
           },
           {
-            "id": "0891ec7d92a65ca1",
+            "id": "9539700fbc18de57",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -70,7 +58,7 @@
             }
           },
           {
-            "id": "1029e59600632c3a",
+            "id": "455dd8d0aefe6a89",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,23 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "8427ee185d9194cc",
+    "id": "8a8d8a02ee977848",
     "type": "split",
     "children": [
       {
-        "id": "64f814d73eb5c3e6",
+        "id": "154e5860bd4a25d9",
         "type": "tabs",
         "children": [
           {
-            "id": "f6af68ef64eeb2fb",
+            "id": "a9d5e6671ff0e23c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Theoretical Background.md",
+                "file": "Cosmesi e AI/Scaletta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,19 +97,19 @@
             }
           },
           {
-            "id": "7e410fe71071e1a9",
+            "id": "c1bab10c84e43bf4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Theoretical Background.md",
+                "file": "Cosmesi e AI/Scaletta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "0fb18f57b810c9a3",
+            "id": "2f66f81fd9837647",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,12 +120,12 @@
             }
           },
           {
-            "id": "80a49455e8c2ee9e",
+            "id": "7595004ddcd0e6bf",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Theoretical Background.md"
+                "file": "Cosmesi e AI/Scaletta.md"
               }
             }
           }
@@ -158,23 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5da924d042de4636",
+  "active": "6a67f32e9e91056c",
   "lastOpenFiles": [
-    "Introduzione.md",
-    "GMCE Dataset.md",
-    "Analisi Sperimentale.md",
-    "Scaletta.md",
-    "Modelli.md",
-    "Approccio Naif.md",
-    "Theoretical Background.md",
-    "ERCosmesi.drawio.png",
-    "CodiceIDProdotti.jpeg",
-    "Normalizzazione unità di misura modello.md",
-    "Omogeneità unità di misura.md",
-    "Strutturazione della gerarchia prodotto - ingrediente - materia prima.md",
-    "Elencazione tabelle di interesse.md",
-    "Costruzione schema ER semplificato.md",
-    "Analisi campi di interesse.md",
-    "Welcome.md"
+    "Cosmesi e AI/Scaletta.md",
+    "Cosmesi e AI/GMCE Dataset.md",
+    "Cosmesi e AI/Modelli.md",
+    "Cosmesi e AI/Introduzione.md",
+    "Assets/Images/ScreenFormulaComponenti.png",
+    "Assets/Images/ScreenFormulaMP.png"
   ]
 }
