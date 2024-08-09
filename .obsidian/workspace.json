@@ -11,9 +11,11 @@
             "id": "6a67f32e9e91056c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Assets/Images/ERCosmesi.drawio.png"
+                "file": "Cosmesi e AI/Modelli.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assets/Images/ERCosmesi.drawio.png",
+                "file": "Cosmesi e AI/Modelli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assets/Images/ERCosmesi.drawio.png",
+                "file": "Cosmesi e AI/Modelli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assets/Images/ERCosmesi.drawio.png"
+                "file": "Cosmesi e AI/Modelli.md"
               }
             }
           }
@@ -146,13 +148,13 @@
   },
   "active": "6a67f32e9e91056c",
   "lastOpenFiles": [
+    "Assets/Images/ERCosmesi.drawio.png",
     "Cosmesi e AI/GMCE Dataset.md",
     "Assets/Images/Tabella1.png",
     "Assets/Images/ScreenFormule.png",
     "Assets/Images/ScreenFormulaMP.png",
     "Assets/Images/clusters.png",
     "Assets/Images/CodiceIDProdotti.jpeg",
-    "Assets/Images/ERCosmesi.drawio.png",
     "Assets/Images/GerarchiaFormule.drawio.png",
     "Assets/Images/ScreenFormulaComponenti.png",
     "Assets/Images/Prodotti_Cmp.PNG",
