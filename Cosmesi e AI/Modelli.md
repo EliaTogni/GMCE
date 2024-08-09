@@ -21,6 +21,8 @@
 | INCI $n$ | $x_{n,1}$      | ... | $x_{n, m}$        | $\sum_{i=1}^m x_{n, i}$ |
 A partire da una tabella strutturata come quella soprastante, si sceglie una colonna contenente una componente. Questa componente viene "blacklistato", cioé non puó piú essere utilizzato nella formula. Il ruolo del modello é trovare il minor numero di altre componenti che permettano di avere una composizione QQ il piú vicino possibile a quella originale. La metrica di distanza utilizzata per valutare la vicinanza tra composizioni qualiquantitative é la distanza Euclidea.
 
+Si indicizzano con $i$ gli INCI (sulle righe) e con $j$ le componenti (sulle colonne).
+
 -------
 ## DATI
 **param nINCI** \#numero di INCI presenti nel modello
