@@ -58,7 +58,7 @@ Apportiamo alcune modifiche. Innanzitutto, la somma degli INCI di tutte le compo
 $$\sum_J a_{ij}\cdot x_j \leq b_i + \varepsilon$$
 $$a_{ij} \cdot x_{j} \leq b_i + \varepsilon \space \forall i, \forall j$$
 $$\forall j \space \max_i a_{ij} \cdot x_j - b_i - \varepsilon \leq 0$$
-$$x_j \leq \frac{b_i + \varepsilon}{c_{ij}} \space \forall i$$
+$$x_j \leq \frac{b_i + \varepsilon}{a_{ij}} \space \forall i$$
 $$x_j \leq \min_{i} \frac{b_i + \varepsilon}{a_j}$$
 $$ \text{calcolo tramite preprocessing } q_j = \min_{i} \frac{b_i + \varepsilon}{a_{ij}}$$
 $$x_j \leq q_j \cdot y_j \text{ con } y_j \text{ variabile binaria}$$
