@@ -10,7 +10,7 @@
 		- Formule Qualiquantitative
 	- Intelligenza Artificiale e Machine Learning
 		- Unsupervised Learning
-			- KMeans (?)
+			- KMeans
 		- Supervised Learning
 			- Multi Layer Neural Networks
 - Tools e Environment
@@ -123,7 +123,7 @@
 - [ ] Significato di prodotti_cmp? prodotti_composizione (dd) -> uguale a fi_percpart
 - [x] Check con Daniele sul significato di tutti i campi 
 - [x] immagine componenti formula GMCE Dataset -> fd_qta da quale dataset arriva?
-- [ ] Quale é il miglior modo di catalogare i prodotti: se la famiglia dei prodotti (prodotti["pr_famiglia"] con 66 classi), il tipo di prodotto (seconda lettera di formumast["fo_codice"] con 15 classi) oppure la classe dei prodotti (prodotti["pr_classe"] con 25 classi). -> pr_classe no
+- [x] Quale é il miglior modo di catalogare i prodotti: se la famiglia dei prodotti (prodotti["pr_famiglia"] con 66 classi), il tipo di prodotto (seconda lettera di formumast["fo_codice"] con 15 classi) oppure la classe dei prodotti (prodotti["pr_classe"] con 25 classi). -> pr_classe no
 - [x] Qual é la differenza tra semilavorato e materia prima?
 - [x] Cosa posso effettivamente mostrare nella tesi?
 - [x] mostrare creazione dataset finale x modello e capire come mai non trova alcune formule

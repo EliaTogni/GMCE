@@ -4,7 +4,6 @@
 
 # Metriche di Valutazione delle Performance
 
-
 -----
 
 # General Settings
@@ -71,3 +70,5 @@ https://cosmeticobs.com/en/articles/focus-67/annex-iai-quantitative-and-qualitat
 https://link.springer.com/chapter/10.1007/978-981-99-2804-0_7
 
 https://www.mdpi.com/1420-3049/29/2/411
+
+- **Cosmetri**: Un software per la gestione della formulazione cosmetica che permette di creare, analizzare e documentare le formule secondo le normative.
