@@ -68,6 +68,13 @@ $$x_j \leq q_j \cdot y_j \text{ con } y_j \text{ variabile binaria}$$
 
 -----
 
+# Modello Decisionale 2
+
+Prendere una formula, togliere tutte le componenti tenendo la composizione qualiquantitativa e richiedere al modello di scegliere tot ingredienti in quantità variabili al fine di ottenere una qq finale vicina a quella fornita.
+
+
+-----
+
 # Modello di Clustering
 
 

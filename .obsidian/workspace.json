@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md",
+                "file": "Cosmesi e AI/Modelli.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scaletta"
+              "title": "Modelli"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md",
+                "file": "Cosmesi e AI/Modelli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Scaletta"
+              "title": "Backlinks for Modelli"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md",
+                "file": "Cosmesi e AI/Modelli.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Scaletta"
+              "title": "Outgoing links from Modelli"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cosmesi e AI/Scaletta.md"
+                "file": "Cosmesi e AI/Modelli.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Scaletta"
+              "title": "Outline of Modelli"
             }
           }
         ]
@@ -164,10 +164,10 @@
   },
   "active": "6a67f32e9e91056c",
   "lastOpenFiles": [
-    "Cosmesi e AI/GMCE Dataset.md",
     "Cosmesi e AI/Scaletta.md",
-    "Cosmesi e AI/Theoretical Background.md",
     "Cosmesi e AI/Analisi Sperimentale.md",
+    "Cosmesi e AI/GMCE Dataset.md",
+    "Cosmesi e AI/Theoretical Background.md",
     "Cosmesi e AI/Modelli.md",
     "Assets/Images/ERCosmesi.drawio.png",
     "Assets/Images/Tabella1.png",

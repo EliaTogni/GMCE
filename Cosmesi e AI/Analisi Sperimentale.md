@@ -4,6 +4,8 @@
 
 # Metriche di Valutazione delle Performance
 
+
+
 -----
 
 # General Settings
@@ -31,6 +33,8 @@ La traspozione del modello decisionale in codice e cosí strutturata:
 - applicazione del modello decisionale.
 
 Poichè la valutazione della bontà di una sostituzione necessita di competenze in ambito chimico non ancora formalizzate, si proporrà un elenco di tali soluzioni in ordine decrescente di vicinanza qualiquantitativa e si sottoporrà ad una figura di riferimento per la valutazione.
+
+==Se, nel testing, il modello riesce sempre a trovare una sostituzione composta da una singola componente, può essere dovuto alla composizione simile tra quella blacklistata e quella scelta. Quindi è ragionevole confrontare le qq delle due componenti e decidere se escludere componenti con qq troppo simili a quella rimossa
 
 -----
 
