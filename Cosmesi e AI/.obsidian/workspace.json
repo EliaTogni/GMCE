@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GMCE Dataset.md",
+                "file": "Theoretical Background.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GMCE Dataset.md",
+                "file": "Theoretical Background.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GMCE Dataset.md",
+                "file": "Theoretical Background.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GMCE Dataset.md"
+                "file": "Theoretical Background.md"
               }
             }
           }
@@ -160,11 +160,13 @@
   },
   "active": "5da924d042de4636",
   "lastOpenFiles": [
-    "Scaletta.md",
-    "Approccio Naif.md",
-    "GMCE Dataset.md",
-    "Theoretical Background.md",
     "Introduzione.md",
+    "GMCE Dataset.md",
+    "Analisi Sperimentale.md",
+    "Scaletta.md",
+    "Modelli.md",
+    "Approccio Naif.md",
+    "Theoretical Background.md",
     "ERCosmesi.drawio.png",
     "CodiceIDProdotti.jpeg",
     "Normalizzazione unità di misura modello.md",

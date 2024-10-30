@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "a97c4c74c85e7105",
+    "type": "split",
+    "children": [
+      {
+        "id": "087c6c5faad87760",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a67f32e9e91056c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cosmesi e AI/Modelli.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Modelli"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3d70165cbd960f43",
+    "type": "split",
+    "children": [
+      {
+        "id": "72c0dcfdc8c030fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7d6ece0ac202977",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9539700fbc18de57",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "455dd8d0aefe6a89",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8a8d8a02ee977848",
+    "type": "split",
+    "children": [
+      {
+        "id": "154e5860bd4a25d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9d5e6671ff0e23c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Cosmesi e AI/Modelli.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Modelli"
+            }
+          },
+          {
+            "id": "c1bab10c84e43bf4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Cosmesi e AI/Modelli.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Modelli"
+            }
+          },
+          {
+            "id": "2f66f81fd9837647",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7595004ddcd0e6bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Cosmesi e AI/Modelli.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Modelli"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6a67f32e9e91056c",
+  "lastOpenFiles": [
+    "Cosmesi e AI/Scaletta.md",
+    "Cosmesi e AI/Analisi Sperimentale.md",
+    "Cosmesi e AI/GMCE Dataset.md",
+    "Cosmesi e AI/Theoretical Background.md",
+    "Cosmesi e AI/Modelli.md",
+    "Assets/Images/ERCosmesi.drawio.png",
+    "Assets/Images/Tabella1.png",
+    "Assets/Images/ScreenFormule.png",
+    "Assets/Images/ScreenFormulaMP.png",
+    "Assets/Images/clusters.png",
+    "Assets/Images/CodiceIDProdotti.jpeg",
+    "Assets/Images/GerarchiaFormule.drawio.png",
+    "Assets/Images/ScreenFormulaComponenti.png",
+    "Assets/Images/Prodotti_Cmp.PNG",
+    "Cosmesi e AI/Introduzione.md"
+  ]
+}

@@ -29,6 +29,8 @@ Il procedimento é il seguente:
 - si rimuove da _Tabella_Componenti_ la componente blacklistata (per far sì che non venga scelta nuovamente dal modello di ottimizzazione);
 - il modello sceglie le componenti da _Tabella_Componenti_, le quali andranno a sostituire la componente rimossa.
 
+Si indicizzano con $i$ gli INCI (sulle righe) e con $j$ le componenti (sulle colonne).
+
 -------
 ## DATI
 **param nINCI** \#numero di INCI presenti nel modello
@@ -74,7 +76,7 @@ Apportiamo alcune modifiche. Innanzitutto, la somma degli INCI di tutte le compo
 $$\sum_J a_{ij}\cdot x_j \leq b_i + \varepsilon$$
 $$a_{ij} \cdot x_{j} \leq b_i + \varepsilon \space \forall i, \forall j$$
 $$\forall j \space \max_i a_{ij} \cdot x_j - b_i - \varepsilon \leq 0$$
-$$x_j \leq \frac{b_i + \varepsilon}{c_{ij}} \space \forall i$$
+$$x_j \leq \frac{b_i + \varepsilon}{a_{ij}} \space \forall i$$
 $$x_j \leq \min_{i} \frac{b_i + \varepsilon}{a_j}$$
 $$ \text{calcolo tramite preprocessing } q_j = \min_{i} \frac{b_i + \varepsilon}{a_{ij}}$$
 
@@ -87,6 +89,13 @@ viene modificato in
 $$x_j \leq q_j \cdot y_j$$
 
 -----
+
+
+-----
+
+# Modello Decisionale 2
+
+Prendere una formula, togliere tutte le componenti tenendo la composizione qualiquantitativa e richiedere al modello di scegliere tot ingredienti in quantità variabili al fine di ottenere una qq finale vicina a quella fornita.
 
 
 -----

@@ -10,7 +10,7 @@
 		- Formule Qualiquantitative
 	- Intelligenza Artificiale e Machine Learning
 		- Unsupervised Learning
-			- KMeans (?)
+			- KMeans
 		- Supervised Learning
 			- Multi Layer Neural Networks
 - Tools e Environment
