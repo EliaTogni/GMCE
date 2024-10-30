@@ -25,9 +25,7 @@ dove $H(C_1)$ e $H(C_2)$ sono le entropie associate al clustering $C_1$ e $C_2$.
 - **Coefficiente di Jaccard**: il Coefficiente di Jaccard è una misura semplice che confronta la somiglianza tra due cluster basandosi sulla presenza o assenza di campioni negli stessi o diversi cluster. È molto simile all'Indice di Rand, tuttavia non considera le coppie di elementi che sono in cluster diversi per entrambi i cluster. Può essere utilizzato come una misura rapida di somiglianza per i cluster\cite{Wagner}. In dettaglio, confronta l'intersezione e l'unione dei punti dati assegnati a ciascun cluster. Fornisce un valore tra $0$ e $1$, con $1$ che indica completa somiglianza e $0$ che indica nessuna somiglianza. Sebbene sia facile da interpretare, è sensibile a piccole dimensioni del campione.
 
 $$J(C_1, C_2) = \frac{\vert C_1 \cap C_2 \vert}{\vert C_1 \cup C_2 \vert} = \frac{n_{11}}{n_{10} + n_{01} + n_{11}}$$
-=======
 
->>>>>>> origin/main
 -----
 
 # General Settings
@@ -56,8 +54,7 @@ La traspozione del modello decisionale in codice e cosí strutturata:
 
 Poichè la valutazione della bontà di una sostituzione necessita di competenze in ambito chimico non ancora formalizzate, si proporrà un elenco di tali soluzioni in ordine decrescente di vicinanza qualiquantitativa e si sottoporrà ad una figura di riferimento per la valutazione.
 
-<<<<<<< HEAD
-----------------------------------------------------------------
+-----
 
 Strutturare raccolta dati per testing di GMCEGurobiTest
 
@@ -111,9 +108,7 @@ Risulta evidente dai dati che alla prima iterazione il modello scelga componenti
 
 Questa prima analisi é stata fatta su una formula con un numero relativamente limitato di componenti e di materie prime.
 
-=======
 ==Se, nel testing, il modello riesce sempre a trovare una sostituzione composta da una singola componente, può essere dovuto alla composizione simile tra quella blacklistata e quella scelta. Quindi è ragionevole confrontare le qq delle due componenti e decidere se escludere componenti con qq troppo simili a quella rimossa
->>>>>>> origin/main
 
 -----
 
