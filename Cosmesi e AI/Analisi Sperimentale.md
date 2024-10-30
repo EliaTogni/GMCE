@@ -4,7 +4,26 @@
 
 # Metriche di Valutazione delle Performance
 
+## Indici di valutazione dei Clustering
+Quando si confrontano i cluster di dati, è importante considerare le caratteristiche specifiche e i requisiti dei dati stessi. Per valutare l'efficacia delle nostre tecniche nell'identificare prodotti chimici dai campioni forniti, abbiamo utilizzato i seguenti indici:
+- **Indice di Rand** (**RI**): l'RI è una misura statistica utilizzata nel clustering dei dati per valutare la somiglianza tra due cluster. Il range di questo indice varia da $0$ a $1$, dove $0$ significa che non c'è accordo tra i due cluster di dati su alcuna coppia di punti dati e $1$ significa accordo perfetto, cioè i cluster di dati sono identici. Questa misura conta quante coppie di oggetti sono negli stessi cluster sia in C$_1$ che in C$_2$ (indicate da $n_{11}$) e quante coppie sono in cluster diversi sia in C$_1$ che in C$_2$ (indicate da $n_{00}$), considerando tutte le possibili combinazioni\cite{Gliozzo1, Wagner}. L'Indice di Rand R è calcolato come:
 
+$$R(C_1, C_2) = \frac{2(n_{00} + n_{11})}{n (n -1)} = \frac{n_{00} + n_{11}}{n_{00} + n_{10} + n_{01} + n_{11}}$$
+- **Indice di Rand Adjusted** (**ARI**): l'ARI è una versione modificata dell'Indice di Rand ampiamente utilizzata per confrontare i cluster in vari domini. Tiene conto degli accordi casuali e fornisce un punteggio di similarità normalizzato. Mentre l'Indice di Rand è limitato a valori tra $0$ e $1$, l'Indice di Rand Adjusted può generare valori negativi (variando da $-1$ a $1$) se l'indice è inferiore al valore atteso\cite{Wagner};
+- **Variazione dell'Informazione** (**VI**): questa misura è comunemente utilizzata nell'analisi dei dati multi-omici in quanto considera l'informazione condivisa e l'entropia (informalmente, l'entropia di un clustering $C$ è una misura dell'incertezza riguardo al cluster di un elemento scelto casualmente) tra due cluster. È una misura della distanza tra due cluster e quantifica la perdita di informazione quando un clustering viene utilizzato per rappresentarne un altro, fornendo approfondimenti sulla somiglianza o dissimilarità tra i cluster \cite{Wagner}. Il range dell'indice VI va da $0$ al valore massimo determinato dal logaritmo del numero di elementi raggruppati;
+- **Mutua Informazione Normalizzata** (**NMI**): la NMI è un'altra misura comunemente utilizzata nell'analisi dei dati. L'indice di informazione mutua fornisce un mezzo per quantificare la misura in cui possiamo ridurre l'incertezza riguardo al cluster di un elemento quando possediamo conoscenza del suo cluster in un altro clustering:
+
+$$MI(C_1, C_2) = \sum_{i = 1}^{k} \sum_{j = 1}^{l} P(i, j) \log_2{\frac{P(i, j)}{P(i)P(j)}}$$
+
+dove $P(i, j) = \frac{\vert C_{1i} \cap C_{2j} \vert}{n}$ è la probabilità che un elemento appartenga al cluster $C_i \in C_1$ e al cluster $C_j \in Cluster_2$. Poiché l'informazione mutua non ha un limite superiore, una versione normalizzata è più facile da interpretare:
+
+$$NMI(C_1, C_2) = \frac{MI(C_1, C_2)}{\sqrt{H(C_1)H(C_2)}}$$
+
+dove $H(C_1)$ e $H(C_2)$ sono le entropie associate al clustering $C_1$ e $C_2$. I valori NMI possono variare da $0$ a $1$, con il valore più alto di NMI raggiunto quando $C_1$ è uguale a $C_2$. L'NMI fornisce una misura normalizzata che tiene conto delle differenze intrinseche nelle dimensioni e nelle entropie degli insiemi confrontati\cite{Wagner};
+- **Indice di Fowlkes-Mallows**: l'Indice di Fowlkes-Mallows misura la media geometrica della precisione e del richiamo per coppie. Un valore più alto per l'indice di Fowlkes-Mallows indica una maggiore somiglianza tra i cluster e le classificazioni di riferimento\cite{Wagner};
+- **Coefficiente di Jaccard**: il Coefficiente di Jaccard è una misura semplice che confronta la somiglianza tra due cluster basandosi sulla presenza o assenza di campioni negli stessi o diversi cluster. È molto simile all'Indice di Rand, tuttavia non considera le coppie di elementi che sono in cluster diversi per entrambi i cluster. Può essere utilizzato come una misura rapida di somiglianza per i cluster\cite{Wagner}. In dettaglio, confronta l'intersezione e l'unione dei punti dati assegnati a ciascun cluster. Fornisce un valore tra $0$ e $1$, con $1$ che indica completa somiglianza e $0$ che indica nessuna somiglianza. Sebbene sia facile da interpretare, è sensibile a piccole dimensioni del campione.
+
+$$J(C_1, C_2) = \frac{\vert C_1 \cap C_2 \vert}{\vert C_1 \cup C_2 \vert} = \frac{n_{11}}{n_{10} + n_{01} + n_{11}}$$
 -----
 
 # General Settings
@@ -32,6 +51,61 @@ La traspozione del modello decisionale in codice e cosí strutturata:
 - applicazione del modello decisionale.
 
 Poichè la valutazione della bontà di una sostituzione necessita di competenze in ambito chimico non ancora formalizzate, si proporrà un elenco di tali soluzioni in ordine decrescente di vicinanza qualiquantitativa e si sottoporrà ad una figura di riferimento per la valutazione.
+
+----------------------------------------------------------------
+
+Strutturare raccolta dati per testing di GMCEGurobiTest
+
+Una delle tecniche di testing della bontá del modello consiste nel fornire a tale modello solamente la composizione qualiquantitative della formula iniziale e lasciargli libertá totale di scelta nella selezione delle componenti da inserire nella formula.
+
+Questo approccio, nel dettaglio, consiste in un loop di iterazioni del modello di ottimizzazione proposto precedentemente. Ogni iterazione proporrá una nuova soluzione e introdurrá un nuovo vincolo, con lo scopo di escludere la soluzione proposta da tutte le iterazioni successive.
+
+Scelta, ad esempio, la formula '\*ABA009 BASE', avente tale composizione
+
+| fo_codice    | B000016_0 | B000107_0 | B0001501_0 | B000291_0 | B100404_0 | E0001389_0 | total |
+| ------------ | --------- | --------- | ---------- | --------- | --------- | ---------- | ----- |
+| *ABA009 BASE | 2.0       | 17.4      | 10.0       | 13.1      | 57.4      | 0.1        | 100.0 |
+
+si fornirá al modello la composizione QQ della formula e tramite lo stesso modello di ottimizzazione visto in precedenza, si cercherá di ottimizzare la funzione obiettivo, ovvero minimizzare il numero di componenti scelte.
+
+Risulta evidente dai dati che alla prima iterazione il modello scelga componenti sostanzialmente identiche a quelle originariamente facenti parte della formula selezionata.
+
+| Componente   | Percentuale |
+| ------------ | ----------- |
+| B000016AF1_0 | 1.99        |
+| C1001513_0   | 17.401101   |
+| B000112_0    | 9.996377    |
+| B000291_1    | 13.09456    |
+| B100404CH1_0 | 57.426634   |
+| E0001389CH_0 | 0.090057    |
+| Totale QQ    | 100.0       |
+
+| Componente | Percentuale |
+| ---------- | ----------- |
+| B000016_0  | 2.0         |
+| B000107_0  | 17.4        |
+| B0001501_0 | 10.0        |
+| B000291_0  | 13.1        |
+| B100404_0  | 57.4        |
+| E0001389_0 | 0.1         |
+| Totale QQ  | 100.0       |
+
+| Componenti                                             | Initial QQ | Found QQ  |
+| ------------------------------------------------------ | ---------- | --------- |
+| CERA ALBA                                              | 2.0        | 1.99127   |
+| CERA MICROCRISTALLINA                                  | 10.0       | 9.996377  |
+| HYDROGENATED MICROCRYSTALLINE WAX                      | 9.4975     | 9.493556  |
+| OCTYLDODECANOL                                         | 57.4       | 57.426634 |
+| PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE | 0.1        | 0.090057  |
+| POLYETHYLENE                                           | 17.4       | 17.401101 |
+| SYNTHETIC WAX                                          | 3.6025     | 3.601004  |
+| Totale Colonna                                         | 100.0      | 100.0     |
+
+==Alla seconda iterazione, il modello 
+
+
+Questa prima analisi é stata fatta su una formula con un numero relativamente limitato di componenti e di materie prime.
+
 
 -----
 

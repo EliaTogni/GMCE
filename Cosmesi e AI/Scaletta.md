@@ -31,9 +31,9 @@
 - [[Analisi Sperimentale]]
 	- Nested Cross Validation
 	- Metriche di Valutazione delle Performance
-	- 
+	- General Settings
 - Risultati ed osservazioni
-- Sviluppi futuri
+- [[Sviluppi futuri]]
 - Appendix
 
 ------------------------------------------------------------------------
@@ -97,11 +97,25 @@
 - [x] Aggiungere componenti a schema ER
 - [x] Aggiungere legenda schema ER
 - [x] Scrivere procedimento per ottenere il dataset per il modello decisionale
+- [x] CSV troppo sparso, come risolvere nel modello?
+- [x] Scrivere paragrafo di spiegazione GMCEGurobiTest
+- [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
+- [ ] Raccogliere risultati testing GMCEGurobiTest
+- [ ] Creare cartella desktop con materiale
+- [x] Scaricare presentazione ceselli cosmetics360
+- [ ] Cercare video cosmetics360
+- [ ] Scrivere introduzione con perry romanowsky
+- [ ] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
 - [ ] Spiegare risultati clustering
 - [ ] Spiegare risultati mlnn
 - [ ] In formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori? cercare paper a riguardo
-- [ ] CSV troppo sparso, come risolvere nel modello?
-
+- [x] Aggiungere paragrafo sviluppi futuri
+- [ ] Chiedere a Ceselli quanto mostrare dei dati
+- [ ] Osservare tutta la parte di preprocessing e capire cosa mettere in tesi
+- [ ] Capire come scrivere equazione di ricorrenza vincoli iterativi
+- [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
+- [ ] Costruire dataset finale delle formule -> componenti
+- [ ] Mostrare scelta di componenti alternative del modello a GMCE
 
 -----
 
@@ -123,7 +137,7 @@
 - [ ] Significato di prodotti_cmp? prodotti_composizione (dd) -> uguale a fi_percpart
 - [x] Check con Daniele sul significato di tutti i campi 
 - [x] immagine componenti formula GMCE Dataset -> fd_qta da quale dataset arriva?
-- [ ] Quale é il miglior modo di catalogare i prodotti: se la famiglia dei prodotti (prodotti["pr_famiglia"] con 66 classi), il tipo di prodotto (seconda lettera di formumast["fo_codice"] con 15 classi) oppure la classe dei prodotti (prodotti["pr_classe"] con 25 classi). -> pr_classe no
+- [x] Quale é il miglior modo di catalogare i prodotti: se la famiglia dei prodotti (prodotti["pr_famiglia"] con 66 classi), il tipo di prodotto (seconda lettera di formumast["fo_codice"] con 15 classi) oppure la classe dei prodotti (prodotti["pr_classe"] con 25 classi). -> pr_classe no
 - [x] Qual é la differenza tra semilavorato e materia prima?
 - [x] Cosa posso effettivamente mostrare nella tesi?
 - [x] mostrare creazione dataset finale x modello e capire come mai non trova alcune formule

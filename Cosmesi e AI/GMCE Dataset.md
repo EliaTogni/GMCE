@@ -276,7 +276,7 @@ Si possono ottenere buoni risultati, indipendentemente dalla sproporzione delle 
 Il rapporto tra il numero di istanze della classe più frequente e il numero di istanze della classe meno frequente viene chiamato **Rapporto di Sbilanciamento (Imbalance Ratio)**. Per un dataset multiclasse, si possono calcolare i rapporti tra la classe più comune e ciascuna delle altre classi.
 
 ### Datasets
-#### Dataset per il Modello Decisionale
+#### Datasets per il Modello Decisionale
 Il DataFrame in questione, a partire da una formula scelta, é cosí strutturato:
 
 |          | Componente $1$ | ... | Componente $m$ | TOTALE                  |
@@ -311,10 +311,60 @@ immagine tmp3 pd merge tmp2 prodotti
 
 Creo una lista contenente tutti i metalli pesanti e li rimuovo, in quanto la loro percentuale di presenza é giá sommata agli altri INCI. Tenerli significherebbe avere un totale superiore al 100%
 
-
-
 ==la domanda ora é se, al fine di costruire la tabella desiderata, io debba considerare tutte le categorie (materia prima o semilavorato) o solo semilavorato.
 
 Mi aspettavo inoltre che la percpart delle materie prime fosse sempre $100\%$, ma non é cosí. 
+
+
+| Codice Formula        | *ABA009 BASE_0 | *AGA011 BASE NEW_0 | ... | nan_0 | total |
+| --------------------- | -------------- | ------------------ | --- | ----- | ----- |
+| BASE IMPACT           | 0.0            | 0.0                | ... | 0.0   | 100.0 |
+| EG/CA202100135:01B:10 | 0.0            | 0.0                | ... | 0.0   | 100.0 |
+| **ABA00907V           | 96.5           | 0.0                | ... | 0.0   | 100.0 |
+| **ARA018312C          | 0.0            | 0.0                | ... | 0.0   | 100.0 |
+| *ABA009 BASE          | 0.0            | 0.0                | ... | 0.0   | 100.0 |
+| ...                   | ...            | ...                | ... | ...   | ...   |
+| AGA01914V-02          | 0.0            | 0.0                | ... | 0.0   | 100.0 |
+| AGA019150R            | 0.0            | 0.0                | ... | 0.0   | 100.0 |
+| AGA019151P            | 0.0            | 0.0                | ... | 0.0   | 100.0 |
+
+Partendo dal DataFrame contenente le formule dei prodotti cosmetici, viene selezionata una formula.
+
+|                | Componente $1$ | Componente $2$ | ... | Componente $n$ | Totale |
+| -------------- | -------------- | -------------- | --- | -------------- | ------ |
+| Codice Formula | $v_1$          | $v_2$          | ... | $v_n$          | 100.0  |
+
+E.g., "\*ABA009 BASE":
+
+|              | B000016_0 | B000107_0 | B0001501_0 | B000291_0 | B100404_0 | E0001389_0 | total |
+| ------------ | --------- | --------- | ---------- | --------- | --------- | ---------- | ----- |
+| *ABA009 BASE | 2.0       | 17.4      | 10.0       | 13.1      | 57.4      | 0.1        | 100.0 |
+
+Da questo DataFrame, si estraggono due liste:
+- una lista contenente il nome delle componenti presenti nella formula;
+- una lista contenente le percentuali di queste componenti.
+
+Ad ogni componente della formula scelta viene sostituita la composizione qualiquantitative
+
+|            | 1,2-HEXANEDIOL | 2-METHYL 5-CYCLOHEXYLPENTANOL | ... | Zingiber Officinale Oil | total Formula |
+| ---------- | -------------- | ----------------------------- | --- | ----------------------- | ------------- |
+| B000016_0  | 0.0            | 0.0                           | ... | 0.0                     | 100.0         |
+| B000107_0  | 0.0            | 0.0                           | ... | 0.0                     | 100.0         |
+| B0001501_0 | 0.0            | 0.0                           | ... | 0.0                     | 100.0         |
+| B000291_0  | 0.0            | 0.0                           | ... | 0.0                     | 100.0         |
+| B100404_0  | 0.0            | 0.0                           | ... | 0.0                     | 100.0         |
+| E0001389_0 | 0.0            | 0.0                           | ... | 0.0                     | 100.0         |
+
+Dopo aver trasposto il DataFrame per avere le materie prime sulle righe invece che sulle colonne, viene scalato ogni componente in base alla sua percentuale presente nella formula. Inoltre, viene eseguita la somma dei valori su ciascuna riga. Il risultato viene assegnato ad una nuova colonna chiamata _total QQ_.
+
+| INCI                          | B000016_0 | B000107_0 | B0001501_0 | B000291_0 | B100404_0 | E0001389_0 | total QQ |
+| ----------------------------- | --------- | --------- | ---------- | --------- | --------- | ---------- | -------- |
+| 1,2-HEXANEDIOL                | 0.0       | 0.0       | 0.0        | 0.0       | 0.0       | 0.0        | 0.0      |
+| 2-METHYL 5-CYCLOHEXYLPENTANOL | 0.0       | 0.0       | 0.0        | 0.0       | 0.0       | 0.0        | 0.0      |
+| ...                           | ...       | ...       | ...        | ...       | ...       | ...        | ...      |
+| ZINGIBER OFFICINALE ROOT OIL  | 0.0       | 0.0       | 0.0        | 0.0       | 0.0       | 0.0        | 0.0      |
+| Zingiber Officinale Oil       | 0.0       | 0.0       | 0.0        | 0.0       | 0.0       | 0.0        | 0.0      |
+| total Formula                 | 2.0       | 17.4      | 10.0       | 13.1      | 57.4      | 0.1        | 100.0    |
+
 
 -----

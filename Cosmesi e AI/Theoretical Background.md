@@ -16,6 +16,47 @@ Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi 
 
 -----
 
+# Ricerca Operativa
+## Programmazione Lineare
+Nel discreto ci sono varie classi di problemi particolari nella Programmazione Lineare Intera:
+- Integer Programming (IP): le variabili possono assumere solamente valori interi;
+- Binary Programming (BP): le variabili possono assumere solo valori 0 e 1;
+- Mixed-Integer Programming (MIP): esistono vari tipi di variabili (intere, continue o binarie) nello stesso problema.
+- 
+\item CO: combinatory optimization -> ci sono delle variabili che indicano di solito elementi di un insieme per cui il numero di soluzioni cresce come il numero di sottoinsiemi dell'insieme dato( in modo combinatorio quindi)
+
+Un problema si dice di Programmazione Lineare quando:
+- le variabili hanno un dominio continuo;
+- i vincoli sono equazioni e disequazioni lineari;
+- la funzione obiettivo è una funzione lineare delle variabili
+
+Nella sua forma generale, un problema di PL si presenta così:
+
+    max/min z = cx
+    
+        subject to $A_i x \geq b_i$
+        
+        $x' \geq 0$
+        
+        x" libere
+        
+
+I vincoli possono essere di tipo maggiore uguale, minore uguale o uguale. Alcune variabili possono essere vincolate a valori non negativi.
+
+Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore alle variabili, come un punto in uno spazio continuo ad $n$ dimensioni dove $n$ è il numero di variabili nel modello.
+
+In questo spazio $n$-dimensionale, ogni soluzione è un punto ed ogni vincolo di uguaglianza è un iperpiano in quello spazio dimensionale (poiché è lineare). Se il vincolo è di disuguaglianza, allora esso corrisponde ad un semispazio, cioè non solo ai punti sull’iperpiano ma anche a quelli che giacciono da una parte dell’iperpiano.
+Il sistema dei vincoli richiede che tutti siano soddisfatti. Corrisponde quindi ad un’intersezione di tanti semispazi. L’intersezione di semispazi è un poliedro. La proprietà fondamentale di un poliedro è di essere convesso.
+
+I semispazi sono convessi. L’intersezione di insiemi convessi è un insieme convesso. Quindi i poliedri sono convessi. Un insieme è convesso quando presi due qualunque punti all'interno di quello spazio, tutti i punti del segmento rettilineo che ha come estremi quei due punti, fanno anch'essi parte dell’insieme convesso.
+
+Esempio
+
+Esistono vari tipi di poliedri. Un poliedro limitato si chiama politopo. può essercene anche uno illimitato, tale per cui se parto da un punto interno al poliedro, esiste una direzione verso la quale non incontro mai la frontiera del poliedro.
+Inoltre esiste un poliedro vuoto, definito da vincoli combinati in maniera tale da impedire l’esistenza di una qualsiasi soluzione ammissibile.
+
+-----
+
 # Intelligenza Artificiale e Machine Learning
 ## Learning Non Supervisionato
 Gli algoritmi che utilizzano dati senza alcuna annotazione semantica si dice che operino in modalità di **learning non supervisionato**. Questi algoritmi classificheranno ed organizzeranno gli input sulla base di caratteristiche comuni per cercare di effettuare ragionamenti e previsioni sugli input successivi.

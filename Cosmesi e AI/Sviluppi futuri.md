@@ -1,0 +1,1 @@
+In formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori? cercare paper a riguardo
