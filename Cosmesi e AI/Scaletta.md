@@ -101,13 +101,14 @@
 - [x] Scrivere procedimento per ottenere il dataset per il modello decisionale
 - [x] CSV troppo sparso, come risolvere nel modello?
 - [x] Scrivere paragrafo di spiegazione GMCEGurobiTest
-- [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
-- [ ] Raccogliere risultati testing GMCEGurobiTest
 - [x] Creare cartella desktop con materiale
 - [x] Scaricare presentazione ceselli cosmetics360
 - [x] Cercare video cosmetics360
-- [ ] Scrivere introduzione con perry romanowsky
+- [x] Scrivere introduzione con perry romanowsky
+- [ ] Leggere sito online su 
 - [ ] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
+- [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
+- [ ] Raccogliere risultati testing GMCEGurobiTest
 - [ ] Spiegare risultati clustering
 - [ ] Spiegare risultati mlnn
 - [ ] In formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori? cercare paper a riguardo

@@ -36,3 +36,7 @@ immagine presentazione
 Dive deep into understanding the synergistic relationship between artificial intelligence and cosmetic chemistry, exploring the pivotal role AI plays in modern beauty innovations.
 
 https://chemintelligence.com/ai-for-formulation
+
+Now, let's say you want to replace one or several raw materials in an _existing formulation_. The reason for that could be: to change your supplier, to replace the ingredient with a bio-based alternative, to replace it with a cheaper ingredient, etc. Of course, you want to obtain a new formulation that has the same performances and stability (or better) than the original formulation.
+
+Starting with your existing formulation and the formulation data that you have acquired while developing that existing formulation, you can use AI-based optimization algorithms (e.g. Bayesian optimization) to reformulate your product in a minimum number of experiments. You will use the same process as if you were developing a new formulation from scratch (see "AI to develop new formulations"), but starting with a larger dataset (all the formulations you have tested while developing the existing formulation). The mission of the optimization algorithm will be to _adapt_ the initial formulation to the new ingredient(s).
