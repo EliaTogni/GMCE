@@ -101,9 +101,9 @@
 - [x] Scrivere paragrafo di spiegazione GMCEGurobiTest
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
 - [ ] Raccogliere risultati testing GMCEGurobiTest
-- [ ] Creare cartella desktop con materiale
+- [x] Creare cartella desktop con materiale
 - [x] Scaricare presentazione ceselli cosmetics360
-- [ ] Cercare video cosmetics360
+- [x] Cercare video cosmetics360
 - [ ] Scrivere introduzione con perry romanowsky
 - [ ] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
 - [ ] Spiegare risultati clustering
