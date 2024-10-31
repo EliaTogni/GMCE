@@ -23,3 +23,8 @@ At present, AI is not a replacement for human chemists. It still can't reliably 
 Hard Decision Problems in Cosmetics Manufacturing
 
 immagine presentazione
+
+
+Dive deep into understanding the synergistic relationship between artificial intelligence and cosmetic chemistry, exploring the pivotal role AI plays in modern beauty innovations.
+
+https://chemintelligence.com/ai-for-formulation
