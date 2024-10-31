@@ -1,3 +1,5 @@
+# Programmazione Matematica e Machine Learning per il Supporto alla Formulazione di Prodotti Cosmetici
+
 - [[Introduzione]]
 	- Definizione del problema
 		- Formulatore
@@ -13,7 +15,7 @@
 			- KMeans
 		- Supervised Learning
 			- Multi Layer Neural Networks
-- Tools e Environment
+- [[Tools e Environment]]
 	- HeidiSQL/Antares
 	- Python
 	-  Colab
