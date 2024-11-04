@@ -19,6 +19,7 @@
 	- HeidiSQL/Antares
 	- Python
 	-  Colab
+	- Gurobi
 - [[GMCE Dataset]]
 	- Struttura del Dataset
 		- Schema ER
