@@ -32,7 +32,7 @@ Un problema si dice di Programmazione Lineare quando:
 - i vincoli sono equazioni e disequazioni lineari;
 - la funzione obiettivo è una funzione lineare delle variabili
 
-Nella sua forma generale, un problema di PL si presenta così:
+Nella sua forma generale, un problema di Programmazione Lineare si presenta così:
 
     max/min z = cx
     
@@ -47,8 +47,9 @@ I vincoli possono essere di tipo maggiore uguale, minore uguale o uguale. Alcune
 
 Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore alle variabili, come un punto in uno spazio continuo ad $n$ dimensioni dove $n$ è il numero di variabili nel modello.
 
-In questo spazio $n$-dimensionale, ogni soluzione è un punto ed ogni vincolo di uguaglianza è un iperpiano in quello spazio dimensionale (poiché è lineare). Se il vincolo è di disuguaglianza, allora esso corrisponde ad un semispazio, cioè non solo ai punti sull’iperpiano ma anche a quelli che giacciono da una parte dell’iperpiano.
-Il sistema dei vincoli richiede che tutti siano soddisfatti. Corrisponde quindi ad un’intersezione di tanti semispazi. L’intersezione di semispazi è un poliedro. La proprietà fondamentale di un poliedro è di essere convesso.
+Nello spazio $n$-dimensionale delle soluzioni, ogni soluzione è considerabile come un punto in tale spazio ed ogni vincolo di uguaglianza è considerabile come un iperpiano (poiché è lineare). Se il vincolo è di disuguaglianza, allora esso corrisponde ad un semispazio, cioè non solo ai punti sull’iperpiano ma anche a quelli che giacciono da una parte dell’iperpiano.
+
+Il sistema dei vincoli richiede che ciascuno di essi sia soddisfatto. Tale sistema corrisponde quindi ad un’intersezione di tanti semispazi, la quale definisce un poliedro. La proprietà fondamentale di un poliedro è di essere convesso.
 
 I semispazi sono convessi. L’intersezione di insiemi convessi è un insieme convesso. Quindi i poliedri sono convessi. Un insieme è convesso quando presi due qualunque punti all'interno di quello spazio, tutti i punti del segmento rettilineo che ha come estremi quei due punti, fanno anch'essi parte dell’insieme convesso.
 
