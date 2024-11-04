@@ -1,12 +1,12 @@
 # Chimica Farmaceutica
 ## Nomenclatura Internazionale degli Ingredienti Cosmetici
-La **Nomenclatura Internazionale degli Ingredienti Cosmetici**, o **International Nomenclature of Cosmetic Ingredients** (**INCI**) è una direttiva introdotta dalla Commissione Europea il 1 gennaio 1997 la quale indica una denominazione degli ingredienti contenuti nei prodotti cosmetici.
+La **Nomenclatura Internazionale degli Ingredienti Cosmetici**, o **International Nomenclature of Cosmetic Ingredients** (**INCI**) è una direttiva introdotta dalla Commissione Europea il 1 gennaio 1997 la quale indica una denominazione degli ingredienti contenuti nei prodotti cosmetici. Ogni nome INCI é un identificatore univoco per un ingrediente cosmetico. E' obbligatorio che ogni cosmetico immesso sul mercato riporti sulla confezione l'elenco degli ingredienti in esso contenuti usando la denominazione INCI.
 
 ==Le sostanze chimiche sintetiche e i derivati vegetali che abbiano subito trasformazione chimica, vengono indicati con nome tecnico. I derivati vegetali estratti dalle piante, sono indicati con il nome scientifico (genere e specie) con cui  sono elencati sulla Farmacopea Europea, eventualmente seguito dall'indicazione della parte della pianta da cui sono stati estratti==
 
-==I nomi dei vari ingredienti vengono riportati in etichetta seguendo un ordine che tiene conto della percentuale inserita nel cosmetico, cioè per **concentrazione decrescente**: l'ingrediente più abbondante nei cosmetici è quasi sempre l'acqua, nella nomenclatura INCI riportata in latino "aqua".
+I nomi dei vari ingredienti in un prodotto vengono riportati in etichetta seguendo un ordine che tiene conto della percentuale inserita nel cosmetico, cioè per **concentrazione decrescente**: e.g., l'ingrediente più abbondante nei cosmetici è quasi sempre l'acqua, nella nomenclatura INCI riportata in latino "aqua".
 
-==L'etichetta riporta nella prima parte le sostanze strutturali del prodotto ovvero i tensioattivi, gelificanti e umettanti. Nella parte centrale sono riportati i principi attivi e nell'utima parte si leggono i conservanti, i coloranti e i profumi.
+L'etichetta riporta nella prima parte le **sostanze strutturali** del prodotto ovvero i tensioattivi, gelificanti e umettanti. Nella parte centrale sono riportati i **principi attivi** e nell'utima parte si leggono i **conservanti**, i **coloranti** e i **profumi**.
 
 ==In base alla legge, l'etichetta dei prodotti cosmetici deve recare l'elenco degli ingredienti in ordine decrescente di peso fino all'1%, percentuale sotto la quale possono essere indicati in ordine sparso.==
 
