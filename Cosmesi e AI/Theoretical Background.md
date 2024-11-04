@@ -1,15 +1,24 @@
 # Chimica Farmaceutica
-## Nomenclatura Internazionale degli Ingredienti Cosmetici
-La **Nomenclatura Internazionale degli Ingredienti Cosmetici**, o **International Nomenclature of Cosmetic Ingredients** (**INCI**) è una direttiva introdotta dalla Commissione Europea il 1 gennaio 1997 la quale indica una denominazione degli ingredienti contenuti nei prodotti cosmetici. Ogni nome INCI é un identificatore univoco per un ingrediente cosmetico. E' obbligatorio che ogni cosmetico immesso sul mercato riporti sulla confezione l'elenco degli ingredienti in esso contenuti usando la denominazione INCI.
+## Nomenclatura Internazionale degli Ingredienti Cosmetici (INCI)
 
-==Le sostanze chimiche sintetiche e i derivati vegetali che abbiano subito trasformazione chimica, vengono indicati con nome tecnico. I derivati vegetali estratti dalle piante, sono indicati con il nome scientifico (genere e specie) con cui  sono elencati sulla Farmacopea Europea, eventualmente seguito dall'indicazione della parte della pianta da cui sono stati estratti==
+La **Nomenclatura Internazionale degli Ingredienti Cosmetici**, nota anche come **International Nomenclature of Cosmetic Ingredients** (**INCI**), è una direttiva introdotta dalla Commissione Europea il 1º gennaio 1997 che stabilisce la denominazione standardizzata degli ingredienti presenti nei prodotti cosmetici. Ogni nome INCI rappresenta un identificatore univoco per ciascun ingrediente cosmetico, assicurando così una comunicazione uniforme e chiara ai consumatori. Secondo la normativa vigente, ogni prodotto cosmetico immesso sul mercato è obbligato a riportare in etichetta l’elenco degli ingredienti utilizzando la denominazione INCI.
 
-I nomi dei vari ingredienti in un prodotto vengono riportati in etichetta seguendo un ordine che tiene conto della percentuale inserita nel cosmetico, cioè per **concentrazione decrescente**: e.g., l'ingrediente più abbondante nei cosmetici è quasi sempre l'acqua, nella nomenclatura INCI riportata in latino "aqua".
+Gli ingredienti sono elencati sull'etichetta seguendo un ordine basato sulla **concentrazione decrescente**: gli ingredienti più presenti nel prodotto sono riportati all'inizio, mentre quelli in percentuali inferiori seguono in ordine decrescente. Di solito, l’ingrediente principale nei cosmetici è l’acqua, indicata in latino come “aqua” nella nomenclatura INCI.
 
-L'etichetta riporta nella prima parte le **sostanze strutturali** del prodotto ovvero i tensioattivi, gelificanti e umettanti. Nella parte centrale sono riportati i **principi attivi** e nell'utima parte si leggono i **conservanti**, i **coloranti** e i **profumi**.
+L’elenco degli ingredienti è suddiviso in sezioni che riflettono la funzione di ciascuna sostanza:
+- Nella prima parte sono riportate le **sostanze strutturali** del prodotto, come tensioattivi, gelificanti e umettanti;
+- Nella parte centrale figurano i **principi attivi**, ovvero le sostanze con specifiche proprietà funzionali;
+- L’ultima parte dell’elenco include i **conservanti**, i **coloranti** e le **fragranze**.
 
-==In base alla legge, l'etichetta dei prodotti cosmetici deve recare l'elenco degli ingredienti in ordine decrescente di peso fino all'1%, percentuale sotto la quale possono essere indicati in ordine sparso.==
+La normativa stabilisce inoltre che gli ingredienti devono essere indicati in ordine decrescente di peso fino alla concentrazione dell'1%; al di sotto di tale soglia, possono essere elencati in ordine sparso.
 
+Le denominazioni INCI possono seguire diversi formati a seconda del trattamento subito dagli ingredienti:
+- Gli ingredienti indicati in **lingua latina** con il proprio nome scientifico (genere e specie), seguito eventualmente dalla specifica della parte della pianta utilizzata, sono inseriti nel prodotto in forma pura e naturale, senza trattamenti (ad esempio, **Maris Aqua** per l’acqua di mare nella sua forma naturale e non trattata);
+- Gli ingredienti che compaiono con **nome botanico in latino** seguito da una descrizione in inglese rappresentano derivati naturali di origine vegetale (es. **Aloe Barbadensis Leaf Juice**: _Aloe Barbadensis_ indica la pianta di Aloe Vera, mentre _Leaf Juice_ specifica che si tratta del succo estratto dalle foglie);
+- Gli ingredienti riportati **in lingua inglese** con la rispettiva denominazione tecnica sono stati sottoposti a processi di trasformazione chimica prima dell’inclusione nella formulazione (ad esempio, **Xanthan Gum**, un polisaccaride ottenuto dalla fermentazione di microrganismi naturali). Fa eccezione la denominazione **_Parfum_** (fragranza), che viene riportata in francese;
+- Gli ingredienti elencati in **formato alfanumerico** indicano coloranti, classificati secondo il registro internazionale del **Color Index International** (ad esempio, **Ci 77491** indica un colorante minerale rosso, noto anche come triossido di ferro).
+
+-----
 
 ## Formule Qualiquantitative
 Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi e quantitativi per descrivere o rappresentare una realtà o un fenomeno. Gli elementi qualitativi si riferiscono a caratteristiche o proprietà non misurabili numericamente, mentre gli elementi quantitativi riguardano aspetti esprimibili con valori numerici. L'unione di queste due componenti offre una descrizione più completa e dettagliata.**Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi e quantitativi per descrivere o rappresentare una realtà o un fenomeno. Gli elementi qualitativi si riferiscono a caratteristiche o proprietà non misurabili numericamente, mentre gli elementi quantitativi riguardano aspetti esprimibili con valori numerici. L'unione di queste due componenti offre una descrizione più completa e dettagliata.**
