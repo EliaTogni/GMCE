@@ -21,19 +21,12 @@ Le denominazioni INCI possono seguire diversi formati a seconda del trattamento 
 -----
 
 ## Formule Qualiquantitative
-Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi e quantitativi per descrivere o rappresentare una realtà o un fenomeno. Gli elementi qualitativi si riferiscono a caratteristiche o proprietà non misurabili numericamente, mentre gli elementi quantitativi riguardano aspetti esprimibili con valori numerici. L'unione di queste due componenti offre una descrizione più completa e dettagliata.**Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi e quantitativi per descrivere o rappresentare una realtà o un fenomeno. Gli elementi qualitativi si riferiscono a caratteristiche o proprietà non misurabili numericamente, mentre gli elementi quantitativi riguardano aspetti esprimibili con valori numerici. L'unione di queste due componenti offre una descrizione più completa e dettagliata.**
+Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi e quantitativi per descrivere o rappresentare una realtà o un fenomeno. Gli elementi qualitativi si riferiscono a caratteristiche o proprietà non misurabili numericamente, mentre gli elementi quantitativi riguardano aspetti esprimibili con valori numerici. L'unione di queste due componenti offre una descrizione più completa e dettagliata.
 
 -----
 
 # Ricerca Operativa
 ## Programmazione Lineare
-Nel discreto ci sono varie classi di problemi particolari nella Programmazione Lineare Intera:
-- Integer Programming (IP): le variabili possono assumere solamente valori interi;
-- Binary Programming (BP): le variabili possono assumere solo valori 0 e 1;
-- Mixed-Integer Programming (MIP): esistono vari tipi di variabili (intere, continue o binarie) nello stesso problema.
-- 
-\item CO: combinatory optimization -> ci sono delle variabili che indicano di solito elementi di un insieme per cui il numero di soluzioni cresce come il numero di sottoinsiemi dell'insieme dato( in modo combinatorio quindi)
-
 Un problema si dice di Programmazione Lineare quando:
 - le variabili hanno un dominio continuo;
 - i vincoli sono equazioni e disequazioni lineari;
@@ -59,10 +52,14 @@ Il sistema dei vincoli richiede che tutti siano soddisfatti. Corrisponde quindi 
 
 I semispazi sono convessi. L’intersezione di insiemi convessi è un insieme convesso. Quindi i poliedri sono convessi. Un insieme è convesso quando presi due qualunque punti all'interno di quello spazio, tutti i punti del segmento rettilineo che ha come estremi quei due punti, fanno anch'essi parte dell’insieme convesso.
 
-Esempio
-
 Esistono vari tipi di poliedri. Un poliedro limitato si chiama politopo. può essercene anche uno illimitato, tale per cui se parto da un punto interno al poliedro, esiste una direzione verso la quale non incontro mai la frontiera del poliedro.
 Inoltre esiste un poliedro vuoto, definito da vincoli combinati in maniera tale da impedire l’esistenza di una qualsiasi soluzione ammissibile.
+
+Nel discreto ci sono varie classi di problemi particolari nella Programmazione Lineare Intera:
+- Integer Programming (IP): le variabili possono assumere solamente valori interi;
+- Binary Programming (BP): le variabili possono assumere solo valori 0 e 1;
+- Mixed-Integer Programming (MIP): esistono vari tipi di variabili (intere, continue o binarie) nello stesso problema.
+- \item CO: combinatory optimization -> ci sono delle variabili che indicano di solito elementi di un insieme per cui il numero di soluzioni cresce come il numero di sottoinsiemi dell'insieme dato( in modo combinatorio quindi)
 
 -----
 
