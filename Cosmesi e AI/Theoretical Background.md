@@ -49,9 +49,11 @@ Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore a
 
 Nello spazio $n$-dimensionale delle soluzioni, ogni soluzione è considerabile come un punto in tale spazio ed ogni vincolo di uguaglianza è considerabile come un iperpiano (poiché è lineare). Se il vincolo è di disuguaglianza, allora esso corrisponde ad un semispazio, cioè non solo ai punti sull’iperpiano ma anche a quelli che giacciono da una parte dell’iperpiano.
 
-Il sistema dei vincoli richiede che ciascuno di essi sia soddisfatto. Tale sistema corrisponde quindi ad un’intersezione di tanti semispazi, la quale definisce un poliedro. La proprietà fondamentale di un poliedro è di essere convesso.
+Il sistema dei vincoli richiede che ciascuno di essi sia soddisfatto. Tale sistema corrisponde, quindi, ad un’intersezione di tanti semispazi, la quale definisce un poliedro. La proprietà fondamentale di un poliedro è di essere convesso. Di conseguenza, i semispazi sono convessi.
 
-I semispazi sono convessi. L’intersezione di insiemi convessi è un insieme convesso. Quindi i poliedri sono convessi. Un insieme è convesso quando presi due qualunque punti all'interno di quello spazio, tutti i punti del segmento rettilineo che ha come estremi quei due punti, fanno anch'essi parte dell’insieme convesso.
+Sapendo che l'intersezione di insiemi convessi è, a sua volta, un insieme convesso 
+
+che i poliedri sono convessi. Un insieme è convesso quando presi due qualunque punti all'interno di quello spazio, tutti i punti del segmento rettilineo che ha come estremi quei due punti, fanno anch'essi parte dell’insieme convesso.
 
 Esistono vari tipi di poliedri. Un poliedro limitato si chiama politopo. può essercene anche uno illimitato, tale per cui se parto da un punto interno al poliedro, esiste una direzione verso la quale non incontro mai la frontiera del poliedro.
 Inoltre esiste un poliedro vuoto, definito da vincoli combinati in maniera tale da impedire l’esistenza di una qualsiasi soluzione ammissibile.
