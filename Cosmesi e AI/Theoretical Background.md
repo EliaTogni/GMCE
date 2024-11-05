@@ -49,8 +49,8 @@ Gli elementi fondamentali di un modello di programmazione matematica sono:
 
 Un algoritmo calcola una **soluzione**, cioé un assegnamento di valori alle variabili.  
 
-## Programmazione Lineare
-La programmazione lineare utilizza un modello matematico per descrivere il problema in questione. L’aggettivo **lineare** indica che tutte le funzioni matematiche di obiettivo e di vincolo in questo modello devono essere funzioni lineari. 
+### Programmazione Lineare
+L’aggettivo **lineare** indica che tutte le funzioni matematiche di obiettivo e di vincolo contenute nel modello matematico per descrivere il problema in questione devono essere funzioni lineari. 
 
 Un problema si dice di programmazione lineare quando:
 - le variabili hanno un dominio continuo;
@@ -63,8 +63,11 @@ $\text{maximize/minimize} \; z = c^T x$
 
 soggetto ai vincoli:
 
-$A x \geq b$
-$x \geq 0$
+$A_1 x \geq b$
+$A_2 x \leq b$
+$A_3 x = b$
+$x' \geq 0$
+$x'' \text{ libere}$
 
 dove $c$ è un vettore dei coefficienti dell’obiettivo, $x$ è il vettore delle variabili decisionali, $A$ è la matrice dei coefficienti dei vincoli e $b$ è il vettore dei termini noti.
 
@@ -83,10 +86,6 @@ Per la convessitá del poliedro, che rappresenta la regione ammissibile e per la
 - il poliedro é illimitato nella direzione di ottimizzazione e, quindi, non esiste un valore ottimo finito:
 - il poliedro é limitato, prende il nome di **politopo** ed esiste almeno un vertice di tale politopo che corrisponde al valore ottimo.
 
-Nel discreto esistono varie classi di problemi particolari nella Programmazione Lineare Intera:
-- Integer Programming (IP): le variabili possono assumere solamente valori interi;
-- Binary Programming (BP): le variabili possono assumere solo valori 0 e 1;
-- Mixed-Integer Programming (MIP): esistono vari tipi di variabili (intere, continue o binarie) nello stesso problema.
 
 -----
 
