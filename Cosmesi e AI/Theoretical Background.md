@@ -69,7 +69,7 @@ $A_3 x = b_3$
 $x' \geq 0$
 $x'' \text{ libere}$
 
-dove $c$ è un vettore dei coefficienti dell’obiettivo, $x$ è il vettore delle variabili decisionali, $A$ è la matrice dei coefficienti dei vincoli e $b$ è il vettore dei termini noti.
+dove $c$ è un vettore dei coefficienti dell’obiettivo, $x$ è il vettore delle variabili decisionali, $A_1$, $A_2$ e $A_3$ sono, rispettivamente, la matrice dei coefficienti dei vincoli di maggiore uguale, di minore uguale e di uguaglianza e $b$ è il vettore dei termini noti. $x'$ é  sottoinsieme dell'insieme delle 
 
 I vincoli possono assumere la forma di disuguaglianze del tipo maggiore o uguale, minore o uguale, oppure di uguaglianze. Inoltre, alcune variabili possono essere limitate a valori non negativi.
 
