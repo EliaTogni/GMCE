@@ -59,13 +59,13 @@ Un problema si dice di programmazione lineare quando:
 
 Nella sua formulazione generale, un problema di Programmazione Lineare è espresso come segue:
 
-$\text{maximize/minimize} \; z = c^T x$
+$\text{massimizza/minimizza la funzione} \; z = c^T x$
 
-soggetto ai vincoli:
+soggetta ai vincoli:
 
-$A_1 x \geq b$
-$A_2 x \leq b$
-$A_3 x = b$
+$A_1 x \geq b_1$
+$A_2 x \leq b_2$
+$A_3 x = b_3$
 $x' \geq 0$
 $x'' \text{ libere}$
 
