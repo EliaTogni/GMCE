@@ -28,11 +28,11 @@ Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi 
 # Ricerca Operativa
 
 ## Programmazione Matematica
+La programmazione matematica è un ramo della ricerca operativa che si occupa di formulare e risolvere problemi in cui è necessario prendere decisioni ottimali rispetto a un obiettivo specifico, come massimizzare i profitti o minimizzare i costi, rispettando una serie di vincoli.
 ## Programmazione Lineare
 La Programmazione Lineare utilizza un modello matematico per descrivere il problema in questione. L’aggettivo **lineare** indica che tutte le funzioni matematiche in questo modello devono essere funzioni lineari. La parola **programmazione** qui non si riferisce alla programmazione informatica ma è, piuttosto, un sinonimo di pianificazione. Pertanto, la Programmazione Lineare riguarda la pianificazione delle attività per ottenere un risultato ottimale, cioè un risultato che raggiunga nel miglior modo possibile l’obiettivo specificato (secondo il modello matematico) tra tutte le alternative possibili.
 
 ==aggiungere sheldon ross a bibliografia
-
 
 Un problema si dice di Programmazione Lineare quando:
 - le variabili hanno un dominio continuo;
@@ -73,10 +73,18 @@ Nel discreto ci sono varie classi di problemi particolari nella Programmazione L
 ## Learning Non Supervisionato
 Gli algoritmi che utilizzano dati senza alcuna annotazione semantica si dice che operino in modalità di **learning non supervisionato**. Questi algoritmi classificheranno ed organizzeranno gli input sulla base di caratteristiche comuni per cercare di effettuare ragionamenti e previsioni sugli input successivi.
 ### Clustering
-In statistica, il **clustering** o **analisi dei gruppi** è un insieme di tecniche di analisi multivariata dei dati volte alla selezione e raggruppamento di elementi omogenei in un insieme di dati.
+==In statistica, il **clustering** o **analisi dei gruppi** è un insieme di tecniche di analisi multivariata dei dati volte alla selezione e raggruppamento di elementi omogenei in un insieme di dati.==
 
 #### KMeans
+L’algoritmo **k-means** è un metodo di clustering iterativo non supervisionato utilizzato per partizionare un insieme di dati in $k$ cluster, dove $k$ è un numero predefinito di cluster scelto dall’utente. L’obiettivo dell’algoritmo è minimizzare la somma delle distanze al quadrato tra ciascun ==punto dati== e il **centroide** del cluster a cui appartiene, riducendo così la varianza all'interno di ciascun cluster.
 
+Il processo inizia con la selezione casuale di $k$ centroidi iniziali, uno per ciascun cluster. Successivamente, l'algoritmo alterna due fasi principali:
+1) **Assegnazione dei punti ai cluster**: ciascun punto dati viene assegnato al cluster il cui centroide è il più vicino, misurato generalmente tramite la distanza euclidea;
+2) **Aggiornamento dei centroidi**: per ciascun cluster, viene ricalcolato il centroide come media aritmetica dei punti assegnati al cluster stesso.
+
+Queste due fasi vengono ripetute fino al raggiungimento di una **condizione di arresto**, che può essere definita dal raggiungimento di un numero massimo di iterazioni o dal caso in cui le assegnazioni dei punti ai cluster non cambiano più tra un'iterazione e l'altra (ovvero, i centroidi si stabilizzano).
+
+L'algoritmo k-means è sensibile alla scelta dei centroidi iniziali, motivo per cui vengono spesso utilizzate tecniche apposite per migliorarne l'inizializzazione e ottenere risultati più stabili.
 
 -----
 
