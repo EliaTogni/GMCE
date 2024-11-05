@@ -39,17 +39,18 @@ Un problema si dice di Programmazione Lineare quando:
 - i vincoli sono equazioni e disequazioni lineari;
 - la funzione obiettivo è una funzione lineare delle variabili
 
-Nella sua forma generale, un problema di Programmazione Lineare si presenta così:
+Nella sua formulazione generale, un problema di Programmazione Lineare è espresso come segue:
 
-$$max/min \space z = cx$$
-$$subject \space to $A_i x \geq b_i$$
-        
-        $x' \geq 0$
-        
-        x" libere
-        
+$\text{max/min} \; z = c^T x$
 
-I vincoli possono essere di tipo maggiore uguale, minore uguale o uguale. Alcune variabili possono essere vincolate a valori non negativi.
+soggetto ai vincoli:
+
+$A x \geq b$
+$x \geq 0$
+
+dove $c$ è un vettore dei coefficienti dell’obiettivo, $x$ è il vettore delle variabili decisionali, $A$ è la matrice dei coefficienti dei vincoli e $b$ è il vettore dei termini noti.
+
+I vincoli possono assumere la forma di disuguaglianze del tipo maggiore o uguale, minore o uguale, oppure di uguaglianze. Inoltre, alcune variabili possono essere limitate a valori non negativi.
 
 Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore alle variabili, come un punto in uno spazio continuo ad $n$ dimensioni dove $n$ è il numero di variabili nel modello.
 
