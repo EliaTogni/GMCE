@@ -86,7 +86,6 @@ Per la convessitá del poliedro, che rappresenta la regione ammissibile e per la
 - il poliedro é illimitato nella direzione di ottimizzazione e, quindi, non esiste un valore ottimo finito:
 - il poliedro é limitato, prende il nome di **politopo** ed esiste almeno un vertice di tale politopo che corrisponde al valore ottimo.
 
-
 -----
 
 # Intelligenza Artificiale e Machine Learning
