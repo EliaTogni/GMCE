@@ -32,12 +32,10 @@ La programmazione matematica è un ramo della ricerca operativa che si occupa di
 ## Programmazione Lineare
 La Programmazione Lineare utilizza un modello matematico per descrivere il problema in questione. L’aggettivo **lineare** indica che tutte le funzioni matematiche in questo modello devono essere funzioni lineari. La parola **programmazione** qui non si riferisce alla programmazione informatica ma è, piuttosto, un sinonimo di pianificazione. Pertanto, la Programmazione Lineare riguarda la pianificazione delle attività per ottenere un risultato ottimale, cioè un risultato che raggiunga nel miglior modo possibile l’obiettivo specificato (secondo il modello matematico) tra tutte le alternative possibili.
 
-==aggiungere sheldon ross a bibliografia
-
 Un problema si dice di Programmazione Lineare quando:
 - le variabili hanno un dominio continuo;
 - i vincoli sono equazioni e disequazioni lineari;
-- la funzione obiettivo è una funzione lineare delle variabili
+- la funzione obiettivo è una funzione lineare delle variabili.
 
 Nella sua formulazione generale, un problema di Programmazione Lineare è espresso come segue:
 
