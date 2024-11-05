@@ -30,6 +30,8 @@ Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi 
 ## Programmazione Matematica
 La programmazione matematica è un ramo della ricerca operativa che si occupa di formulare e risolvere problemi in cui è necessario prendere decisioni ottimali rispetto a un obiettivo specifico, come massimizzare i profitti o minimizzare i costi, rispettando una serie di vincoli.
 
+Il termine **programmazione** qui non si riferisce alla programmazione informatica ma è, piuttosto, un sinonimo di pianificazione. Pertanto, la programmazione matematica riguarda la pianificazione delle attività per ottenere un risultato ottimale, cioè un risultato che raggiunga nel miglior modo possibile l’obiettivo specificato (secondo il modello matematico) tra tutte le alternative possibili.
+
 I problemi di decisione possono essere classificati in base a tre caratteristiche principali:
 - numero di obiettivi;
 - numero di decisori;
@@ -38,8 +40,17 @@ I problemi di decisione possono essere classificati in base a tre caratteristich
 Consideriamo i problemi con un solo obiettivo, un solo decisore, deterministici.
 
 La programmazione matematica presuppone la formulazione del problema in termini di modello matematico.
+
+Gli elementi fondamentali di un modello di programmazione matematica sono:
+- dati;
+- variabili;
+- vincoli;
+- funzione obiettivo.
+
+Un algoritmo calcola una **soluzione**, cioé un assegnamento di valori alle variabili.  
+
 ## Programmazione Lineare
-La programmazione lineare utilizza un modello matematico per descrivere il problema in questione. L’aggettivo **lineare** indica che tutte le funzioni matematiche in questo modello devono essere funzioni lineari. La parola **programmazione** qui non si riferisce alla programmazione informatica ma è, piuttosto, un sinonimo di pianificazione. Pertanto, la programmazione lineare riguarda la pianificazione delle attività per ottenere un risultato ottimale, cioè un risultato che raggiunga nel miglior modo possibile l’obiettivo specificato (secondo il modello matematico) tra tutte le alternative possibili.
+La programmazione lineare utilizza un modello matematico per descrivere il problema in questione. L’aggettivo **lineare** indica che tutte le funzioni matematiche di obiettivo e di vincolo in questo modello devono essere funzioni lineari. 
 
 Un problema si dice di programmazione lineare quando:
 - le variabili hanno un dominio continuo;
@@ -59,14 +70,18 @@ dove $c$ è un vettore dei coefficienti dell’obiettivo, $x$ è il vettore dell
 
 I vincoli possono assumere la forma di disuguaglianze del tipo maggiore o uguale, minore o uguale, oppure di uguaglianze. Inoltre, alcune variabili possono essere limitate a valori non negativi.
 
-Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore alle variabili, come un punto in uno spazio continuo ad $n$ dimensioni dove $n$ è il numero di variabili nel modello.
+E' possibile dare un'interpretazione geometrica alla programmazione lineare. Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore alle variabili, come un punto in uno spazio continuo ad $n$ dimensioni dove $n$ è il numero di variabili nel modello.
 
-Nello spazio $n$-dimensionale delle soluzioni, ogni soluzione è considerabile come un punto in tale spazio ed ogni vincolo di uguaglianza $ax = b$ è considerabile come un iperpiano (poiché è lineare). Se il vincolo è di disuguaglianza, allora esso corrisponde ad un semispazio, cioè non solo ai punti sull’iperpiano ma anche a quelli che giacciono da una parte dell’iperpiano.
+Nello spazio $n$-dimensionale delle soluzioni, ogni soluzione è considerabile come un punto in tale spazio ed ogni vincolo di uguaglianza $ax = b$ è considerabile come un iperpiano (poiché è lineare). Se il vincolo è di disuguaglianza (e.g., $ax \leq b$), allora esso corrisponde ad un semispazio, cioè non solo ai punti sull’iperpiano ma anche a quelli che giacciono da una parte dell’iperpiano.
 
-Il sistema dei vincoli impone che ciascuna condizione sia rispettata, il che equivale a considerare l'intersezione di diversi semispazi. Questa intersezione definisce un poliedro. La proprietà principale di un poliedro è la **convessità**, ovvero la caratteristica per cui, dati due punti qualsiasi all'interno del poliedro, il segmento che li congiunge rimane interamente contenuto all'interno del poliedro stesso. Di conseguenza, anche i semispazi che lo compongono sono convessi.
+Il sistema dei vincoli impone che ciascuna condizione sia rispettata, il che equivale a considerare l'intersezione di diversi semispazi. Questa intersezione di semispazi definisce un **poliedro**. Una delle proprietá dei semispazi é la **convessità**, ovvero la caratteristica per cui, dati due punti qualsiasi all'interno del semispazio, il segmento che li congiunge rimane interamente contenuto all'interno del semispazio stesso. Inoltre, le intersezioni di insiemi convessi sono, a loro volta, insiemi convessi. Quindi i poliedri sono convessi.
 
-Esistono vari tipi di poliedri. Un poliedro limitato si chiama politopo. può essercene anche uno illimitato, tale per cui se parto da un punto interno al poliedro, esiste una direzione verso la quale non incontro mai la frontiera del poliedro.
-Inoltre esiste un poliedro vuoto, definito da vincoli combinati in maniera tale da impedire l’esistenza di una qualsiasi soluzione ammissibile.
+Poiche la funzione obiettivo é lineare, tutte le soluzioni equivalenti giacciono su uno stesso iperpiano. La funzione obiettivo corrisponde, inoltre, ad un fascio di iperpiani paralleli, ordinati come i corrispondenti valori dell’obiettivo. La direzione di ottimizzazione (cioé minimizzazione o massimizzazione) definisce quindi l’ordinamento degli iperpiani del fascio.
+
+Per la convessitá del poliedro, che rappresenta la regione ammissibile e per la linearitá delle curve di livello della funzione obiettivo, possono darsi tre casi:
+- il poliedro é vuoto e, quindi, non esistono soluzioni ammissibili;
+- il poliedro é illimitato nella direzione di ottimizzazione e, quindi, non esiste un valore ottimo finito:
+- il poliedro é limitato, prende il nome di **politopo** ed esiste almeno un vertice di tale politopo che corrisponde al valore ottimo.
 
 Nel discreto esistono varie classi di problemi particolari nella Programmazione Lineare Intera:
 - Integer Programming (IP): le variabili possono assumere solamente valori interi;
