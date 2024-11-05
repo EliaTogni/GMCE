@@ -69,11 +69,9 @@ Nel discreto ci sono varie classi di problemi particolari nella Programmazione L
 
 # Intelligenza Artificiale e Machine Learning
 
-Data inference is the study of methods that use data from the past for making predictions about the future. Machine learning is a powerful tool that can be used to solve a wide range of data inference problems, like clustering or predictions ones.
-
-Algorithms that solve a learning tasks based on semantically annotated historical data (e.g., documents annotated with their topic or images annotated with the objects they contain) are said to operate in a supervised learning mode. In contrast, algorithms that use data without any semantic annotation are said to operate in an unsupervised learning mode.
+L'inferenza sui dati è lo studio dei metodi che utilizzano i dati del passato per fare previsioni sul futuro. Uno di questi metodi é il **machine learning**, uno strumento potente che può essere impiegato per risolvere una vasta gamma di problemi di inferenza sui dati, come quelli di clustering o di previsione.
 ## Learning Non Supervisionato
-Gli algoritmi che utilizzano dati senza alcuna annotazione semantica si dice che operino in modalità di **learning non supervisionato**. Questi algoritmi classificheranno ed organizzeranno gli input sulla base di caratteristiche comuni per cercare di effettuare ragionamenti e previsioni sugli input successivi.
+Gli algoritmi di inferenza che utilizzano dati senza alcuna annotazione semantica si dice che operino in modalità di **learning non supervisionato**. Questi algoritmi classificheranno ed organizzeranno gli input sulla base di caratteristiche comuni per cercare di effettuare ragionamenti e previsioni sugli input successivi.
 ### Clustering
 Il **clustering** o **analisi dei gruppi** è un insieme di tecniche di analisi multivariata dei dati volte alla selezione e raggruppamento di elementi omogenei in un insieme di dati.== 
 
@@ -93,7 +91,7 @@ L'algoritmo k-means è sensibile alla scelta dei centroidi iniziali, motivo per 
 -----
 
 ## Learning Supervisionato
-Gli algoritmi che risolvono una learning task basata su dati annotati semanticamente (ad esempio, documenti annotati con il loro argomento o immagini annotate con gli oggetti che contengono) si dice che operino in modalità di **learning supervisionato**
+Gli algoritmi di inferenza che risolvono una learning task basata su dati annotati semanticamente (ad esempio, documenti annotati con il loro argomento o immagini annotate con gli oggetti che contengono) si dice che operino in modalità di **learning supervisionato**
 
 ### Artificial Neural Networks
 Le **Artificial Neural Networks** (ANNs) sono una grande e complessa classe di predittori applicabili a una varietà di campi, data la loro potente capacità in compiti come classificazione, regressione e predizione di sequenze.
