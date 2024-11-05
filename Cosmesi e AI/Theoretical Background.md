@@ -56,13 +56,7 @@ Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore a
 
 Nello spazio $n$-dimensionale delle soluzioni, ogni soluzione è considerabile come un punto in tale spazio ed ogni vincolo di uguaglianza è considerabile come un iperpiano (poiché è lineare). Se il vincolo è di disuguaglianza, allora esso corrisponde ad un semispazio, cioè non solo ai punti sull’iperpiano ma anche a quelli che giacciono da una parte dell’iperpiano.
 
-Il sistema dei vincoli richiede che ciascuno di essi sia soddisfatto. Tale sistema corrisponde, quindi, ad un’intersezione di tanti semispazi, la quale definisce un poliedro. La proprietà fondamentale di un poliedro è la convessitá, cioé il fatto che, dati due punti qualsiasi all'interno del poliedro, il segmento che li congiunge si trova completamente all'interno del poliedro stesso. Di conseguenza, i semispazi sono convessi.
-
-Sapendo che l'intersezione di insiemi convessi è, a sua volta, un insieme convesso 
-
-che i poliedri sono convessi. Un insieme è convesso quando presi due qualunque punti all'interno di quello spazio, tutti i punti del segmento rettilineo che ha come estremi quei due punti, fanno anch'essi parte dell’insieme convesso.
-
-==Il sistema dei vincoli impone che ciascuna condizione sia rispettata, il che equivale a considerare l'intersezione di diversi semispazi. Questa intersezione definisce un poliedro. La proprietà principale di un poliedro è la **convessità**, ovvero la caratteristica per cui, dati due punti qualsiasi all'interno del poliedro, il segmento che li congiunge rimane interamente contenuto all'interno del poliedro stesso. Di conseguenza, anche i semispazi che lo compongono sono convessi.
+Il sistema dei vincoli impone che ciascuna condizione sia rispettata, il che equivale a considerare l'intersezione di diversi semispazi. Questa intersezione definisce un poliedro. La proprietà principale di un poliedro è la **convessità**, ovvero la caratteristica per cui, dati due punti qualsiasi all'interno del poliedro, il segmento che li congiunge rimane interamente contenuto all'interno del poliedro stesso. Di conseguenza, anche i semispazi che lo compongono sono convessi.
 
 Esistono vari tipi di poliedri. Un poliedro limitato si chiama politopo. può essercene anche uno illimitato, tale per cui se parto da un punto interno al poliedro, esiste una direzione verso la quale non incontro mai la frontiera del poliedro.
 Inoltre esiste un poliedro vuoto, definito da vincoli combinati in maniera tale da impedire l’esistenza di una qualsiasi soluzione ammissibile.
@@ -79,8 +73,10 @@ Nel discreto ci sono varie classi di problemi particolari nella Programmazione L
 ## Learning Non Supervisionato
 Gli algoritmi che utilizzano dati senza alcuna annotazione semantica si dice che operino in modalità di **learning non supervisionato**. Questi algoritmi classificheranno ed organizzeranno gli input sulla base di caratteristiche comuni per cercare di effettuare ragionamenti e previsioni sugli input successivi.
 ### Clustering
+In statistica, il **clustering** o **analisi dei gruppi** è un insieme di tecniche di analisi multivariata dei dati volte alla selezione e raggruppamento di elementi omogenei in un insieme di dati.
 
 #### KMeans
+
 
 -----
 
