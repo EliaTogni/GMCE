@@ -26,11 +26,12 @@ Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi 
 -----
 
 # Ricerca Operativa
+
+## Programmazione Matematica
 ## Programmazione Lineare
+La Programmazione Lineare utilizza un modello matematico per descrivere il problema in questione. L’aggettivo **lineare** indica che tutte le funzioni matematiche in questo modello devono essere funzioni lineari. La parola **programmazione** qui non si riferisce alla programmazione informatica ma è, piuttosto, un sinonimo di pianificazione. Pertanto, la Programmazione Lineare riguarda la pianificazione delle attività per ottenere un risultato ottimale, cioè un risultato che raggiunga nel miglior modo possibile l’obiettivo specificato (secondo il modello matematico) tra tutte le alternative possibili.
 
-==Linear programming uses a mathematical model to describe the problem of concern. The adjective linear means that all the mathematical functions in this model are required to be linear functions. The word programming does not refer here to computer programming; rather, it is essentially a synonym for planning. Thus, linear programming involves the planning of activities to obtain an optimal result, i.e., a result that reaches the specified goal best (according to the mathematical model) among all feasible alternatives.
-
-aggiungere sheldon ross a bibliografia
+==aggiungere sheldon ross a bibliografia
 
 
 Un problema si dice di Programmazione Lineare quando:
@@ -40,9 +41,8 @@ Un problema si dice di Programmazione Lineare quando:
 
 Nella sua forma generale, un problema di Programmazione Lineare si presenta così:
 
-    max/min z = cx
-    
-        subject to $A_i x \geq b_i$
+$$max/min \space z = cx$$
+$$subject \space to $A_i x \geq b_i$$
         
         $x' \geq 0$
         
