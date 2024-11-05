@@ -30,7 +30,7 @@ Una formula qualiquantitativa è un'espressione che integra aspetti qualitativi 
 ## Programmazione Matematica
 La programmazione matematica è un ramo della ricerca operativa che si occupa di formulare e risolvere problemi in cui è necessario prendere decisioni ottimali rispetto a un obiettivo specifico, come massimizzare i profitti o minimizzare i costi, rispettando una serie di vincoli.
 
-Il termine **programmazione** qui non si riferisce alla programmazione informatica ma è, piuttosto, un sinonimo di pianificazione. Pertanto, la programmazione matematica riguarda la pianificazione delle attività per ottenere un risultato ottimale, cioè un risultato che raggiunga nel miglior modo possibile l’obiettivo specificato (secondo il modello matematico) tra tutte le alternative possibili.
+Il termine **programmazione** qui non si riferisce alla programmazione informatica ma è, piuttosto, un sinonimo di pianificazione. Pertanto, la programmazione matematica riguarda la pianificazione delle attività per ottenere un risultato ottimale, cioè un risultato che raggiunga nel miglior modo possibile l’obiettivo specificato (secondo il modello matematico) tra tutte le alternative possibili\cite{Ross}.
 
 I problemi di decisione possono essere classificati in base a tre caratteristiche principali:
 - numero di obiettivi;
