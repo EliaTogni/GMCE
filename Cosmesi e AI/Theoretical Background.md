@@ -69,9 +69,9 @@ $A_3 x = b_3$
 $x' \geq 0$
 $x'' \text{ libere}$
 
-dove $c$ è un vettore dei coefficienti dell’obiettivo, $x$ è il vettore delle variabili decisionali, $A_1$, $A_2$ e $A_3$ sono, rispettivamente, la matrice dei coefficienti dei vincoli di maggiore uguale, di minore uguale e di uguaglianza e $b$ è il vettore dei termini noti. $x'$ é  sottoinsieme dell'insieme delle 
+dove $c$ è un vettore dei coefficienti dell’obiettivo, $x$ è il vettore delle variabili decisionali, $A_1$, $A_2$ e $A_3$ sono, rispettivamente, la matrice dei coefficienti dei vincoli di maggiore uguale, di minore uguale e di uguaglianza e $b$ è il vettore dei termini noti.
 
-I vincoli possono assumere la forma di disuguaglianze del tipo maggiore o uguale, minore o uguale, oppure di uguaglianze. Inoltre, alcune variabili possono essere limitate a valori non negativi.
+$x'$ rappresenta il sottoinsieme delle variabili vincolate alla non negatività, ossia le variabili che devono assumere valori pari o superiori a zero, mentre $x"$ indica il sottoinsieme delle variabili libere, che non sono soggette a vincoli di segno e possono quindi assumere valori sia positivi che negativi.
 
 E' possibile dare un'interpretazione geometrica alla programmazione lineare. Ogni soluzione $x$ puó essere interpretata, essendo un assegnamento di valore alle variabili, come un punto in uno spazio continuo ad $n$ dimensioni dove $n$ è il numero di variabili nel modello.
 
