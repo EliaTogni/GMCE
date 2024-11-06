@@ -106,17 +106,17 @@
 - [x] Scaricare presentazione ceselli cosmetics360
 - [x] Cercare video cosmetics360
 - [x] Scrivere introduzione con perry romanowsky
+- [ ] Capire come scrivere equazione di ricorrenza vincoli iterativi
 - [ ] Leggere sito online su 
 - [ ] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
-- [ ] Raccogliere risultati testing GMCEGurobiTest
+- [x] Raccogliere risultati testing GMCEGurobiTest
 - [ ] Spiegare risultati clustering
 - [ ] Spiegare risultati mlnn
 - [ ] In formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori? cercare paper a riguardo
 - [x] Aggiungere paragrafo sviluppi futuri
 - [ ] Chiedere a Ceselli quanto mostrare dei dati
 - [ ] Osservare tutta la parte di preprocessing e capire cosa mettere in tesi
-- [ ] Capire come scrivere equazione di ricorrenza vincoli iterativi
 - [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
 - [ ] Costruire dataset finale delle formule -> componenti
 - [ ] Mostrare scelta di componenti alternative del modello a GMCE
