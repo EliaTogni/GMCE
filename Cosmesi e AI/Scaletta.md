@@ -15,22 +15,25 @@
 			- KMeans
 		- Supervised Learning
 			- Multi Layer Neural Networks
+- [[Metodologia]]
+	- Workflow
+	- Struttura del software
+	- Modulo del preprocessing
+	- [[Modelli]]
+		- Modello Decisionale
+		- Modello di Clustering
+		- Multi Layer Neural Networks
 - [[Tools e Environment]]
 	- HeidiSQL/Antares
 	- Python
 	-  Colab
 	- Gurobi
-- [[GMCE Dataset]]
+- [[Case Study]]
 	- Struttura del Dataset
 		- Schema ER
 		- Tabelle
 	- Data Preprocessing
-		- Metodologia
 		- 
-- [[Modelli]]
-	- Modello Decisionale
-	- Modello di Clustering
-	- Multi Layer Neural Networks
 - [[Analisi Sperimentale]]
 	- Nested Cross Validation
 	- Metriche di Valutazione delle Performance
