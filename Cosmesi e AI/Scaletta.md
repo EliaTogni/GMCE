@@ -106,7 +106,8 @@
 - [x] Scaricare presentazione ceselli cosmetics360
 - [x] Cercare video cosmetics360
 - [x] Scrivere introduzione con perry romanowsky
-- [ ] Capire come scrivere equazione di ricorrenza vincoli iterativi
+- [x] Capire come scrivere equazione di ricorrenza vincoli iterativi
+- [ ] Riordinare codice GMCEGurobiTest2
 - [ ] Leggere sito online su 
 - [ ] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
