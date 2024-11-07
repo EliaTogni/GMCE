@@ -28,6 +28,16 @@ At present, AI is not a replacement for human chemists. It still can't reliably 
 
 -----
 
+# Soluzione Proposta
+
+
+-----
+
+# Overview 
+
+
+-----
+
 Hard Decision Problems in Cosmetics Manufacturing
 
 immagine presentazione
