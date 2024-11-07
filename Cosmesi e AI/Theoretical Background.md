@@ -128,7 +128,7 @@ L'input degli algoritmi di cluster è un insieme di esempi, ciascuno descritto d
 
 ==È comune che tutti (o quasi tutti) gli esempi all'interno di un cluster appartengano alla stessa classe. In tal caso, lo sviluppatore di un software di apprendimento supervisionato potrebbe decidere di identificare prima i cluster e poi di assegnare a ciascun cluster l'etichetta della sua classe dominante.==
 
-#### KMeans
+#### $K$-Means
 L'algoritmo **$k$-means** é uno dei piú semplici metodi di clustering iterativo non supervisionato, il quale viene utilizzato per partizionare un insieme di dati in $k$ cluster, dove $k$ è un numero predefinito di cluster scelto dall’utente. L’obiettivo dell’algoritmo è minimizzare la somma delle distanze al quadrato tra ciascun punto e il **centroide** del cluster a cui appartiene, riducendo così la varianza all'interno di ciascun cluster\cite{Kubat}.
 
 Il processo inizia con la selezione casuale di $k$ centroidi iniziali, uno per ciascun cluster, non necessariamente tra i valori interni al training set. Successivamente, l'algoritmo alterna due fasi principali:
