@@ -110,7 +110,7 @@
 - [x] Cercare video cosmetics360
 - [x] Scrivere introduzione con perry romanowsky
 - [x] Capire come scrivere equazione di ricorrenza vincoli iterativi
-- [ ] Riordinare codice GMCEGurobiTest2
+- [x] Riordinare codice GMCEGurobiTest2
 - [ ] Leggere sito online su 
 - [ ] Aggregazione componenti con stessa qq
 - [ ] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
