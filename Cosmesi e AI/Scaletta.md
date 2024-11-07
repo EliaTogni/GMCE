@@ -19,7 +19,7 @@
 	- Workflow
 	- Struttura del software
 	- Modulo del preprocessing
-	- [[Modelli]]
+	- Modelli
 		- Modello Decisionale
 		- Modello di Clustering
 		- Multi Layer Neural Networks
