@@ -125,6 +125,8 @@
 - [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
 - [ ] Costruire dataset finale delle formule -> componenti
 - [ ] Mostrare scelta di componenti alternative del modello a GMCE
+- [ ] Sistemare vincolo iterativo
+- [ ] 
 
 -----
 
