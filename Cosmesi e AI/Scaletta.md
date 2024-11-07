@@ -112,8 +112,8 @@
 - [x] Capire come scrivere equazione di ricorrenza vincoli iterativi
 - [x] Riordinare codice GMCEGurobiTest2
 - [ ] Leggere sito online su 
-- [ ] Aggregazione componenti con stessa qq
-- [ ] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
+- [x] Aggregazione componenti con stessa qq
+- [x] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
 - [x] Raccogliere risultati testing GMCEGurobiTest
 - [ ] Spiegare risultati clustering
