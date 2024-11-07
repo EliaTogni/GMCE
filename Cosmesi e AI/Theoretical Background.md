@@ -91,31 +91,6 @@ Per la convessitá del poliedro, che rappresenta la regione ammissibile e per la
 # Intelligenza Artificiale e Machine Learning
 
 L'inferenza sui dati è lo studio dei metodi che utilizzano i dati del passato per fare previsioni sul futuro. Uno di questi metodi é il **machine learning**, uno strumento potente che può essere impiegato per risolvere una vasta gamma di problemi di inferenza sui dati, come quelli di clustering o di previsione.
-## Learning Non Supervisionato
-Gli algoritmi di inferenza che utilizzano dati senza alcuna annotazione semantica si dice che operino in modalità di **learning non supervisionato**. 
-Mentre le tecniche di apprendimento supervisionato si concentrano sull'induzione dei classificatori  ==induction of classifiers==, gli algoritmi di apprendimento supervisionato classificheranno ed organizzeranno gli input sulla base di caratteristiche comuni per cercare di effettuare ragionamenti e previsioni sugli input successivi.
-### Clustering
-Il **clustering** o **analisi dei gruppi** è un insieme di tecniche di analisi multivariata dei dati volte alla selezione e raggruppamento di elementi omogenei in un insieme di dati.
-
-==Visual identification of such groups in a two-dimensional space is easy, but in
-four or more dimensions, humans can neither visualize the data nor see the clusters.
-These can only be detected by cluster-analysis algorithms.
-
-the input is a set of examples, each described by a vector of attribute values—but no class labels. The output is a set of two or more clusters of examples.
-
-
-#### KMeans
-L’algoritmo **$k$-means** è un metodo di clustering iterativo non supervisionato utilizzato per partizionare un insieme di dati in $k$ cluster, dove $k$ è un numero predefinito di cluster scelto dall’utente. L’obiettivo dell’algoritmo è minimizzare la somma delle distanze al quadrato tra ciascun punto e il **centroide** del cluster a cui appartiene, riducendo così la varianza all'interno di ciascun cluster.
-
-Il processo inizia con la selezione casuale di $k$ centroidi iniziali, uno per ciascun cluster, non necessariamente tra i valori interni al training set. Successivamente, l'algoritmo alterna due fasi principali:
-1) **Assegnazione dei punti ai cluster**: ciascun punto dati viene assegnato al cluster il cui centroide è il più vicino, misurato generalmente tramite la distanza euclidea;
-2) **Aggiornamento dei centroidi**: per ciascun cluster, viene ricalcolato il centroide come media aritmetica dei punti assegnati al cluster stesso e lo si elegge come nuovo centro.
-
-Queste due fasi vengono ripetute fino al raggiungimento di una **condizione di arresto**, che può essere definita dal raggiungimento di un numero massimo di iterazioni o dal caso in cui le assegnazioni dei punti ai cluster non cambiano più tra un'iterazione e l'altra (ovvero, i centroidi si stabilizzano).
-
-L'algoritmo $k$-means è sensibile alla scelta dei centroidi iniziali, motivo per cui vengono spesso utilizzate tecniche apposite per migliorarne l'inizializzazione e ottenere risultati più stabili.
-
------
 
 ## Learning Supervisionato
 Gli algoritmi di inferenza che risolvono una learning task basata su dati annotati semanticamente (ad esempio, documenti annotati con il loro argomento o immagini annotate con gli oggetti che contengono) si dice che operino in modalità di **learning supervisionato**
@@ -138,5 +113,30 @@ La forma più semplice di Feed Forward Neural Network è la Multi-Layer Neural N
 - **Hidden Layer**: questo tipo di strato comprende tutti gli strati tra quello di input e quello di output. Tutti i nodi in questo tipo di strato hanno sia archi in entrata che in uscita.
 
 immagine esempio ffnn
+
+-----
+
+## Learning Non Supervisionato
+Gli algoritmi di inferenza che utilizzano dati senza alcuna annotazione semantica si dice che operino in modalità di **learning non supervisionato**. 
+Mentre le tecniche di apprendimento supervisionato si concentrano sull'induzione di classificatori, gli algoritmi di apprendimento supervisionato classificheranno ed organizzeranno gli input sulla base di caratteristiche comuni per cercare di effettuare ragionamenti e previsioni sugli input successivi\cite{Kubat}.
+### Clustering
+Il **clustering** o **analisi dei gruppi** è un insieme di tecniche di analisi multivariata dei dati volte alla selezione e raggruppamento di elementi omogenei in un insieme di dati.
+
+L'identificazione visiva di tali insiemi in uno spazio bidimensionale o tridimensionale è semplice, ma in quattro o più dimensioni gli esseri umani non possono né visualizzare i dati né vedere i cluster. Questi possono essere rilevati solo tramite algoritmi di analisi dei cluster.
+
+L'input degli algoritmi di cluster è un insieme di esempi, ciascuno descritto da un vettore di valori di attributi, ma senza etichette di classe. L'output, invece, è un insieme di due o più cluster di esempi. 
+
+==È comune che tutti (o quasi tutti) gli esempi all'interno di un cluster appartengano alla stessa classe. In tal caso, lo sviluppatore di un software di apprendimento supervisionato potrebbe decidere di identificare prima i cluster e poi di assegnare a ciascun cluster l'etichetta della sua classe dominante.==
+
+#### KMeans
+L'algoritmo **$k$-means** é uno dei piú semplici metodi di clustering iterativo non supervisionato, il quale viene utilizzato per partizionare un insieme di dati in $k$ cluster, dove $k$ è un numero predefinito di cluster scelto dall’utente. L’obiettivo dell’algoritmo è minimizzare la somma delle distanze al quadrato tra ciascun punto e il **centroide** del cluster a cui appartiene, riducendo così la varianza all'interno di ciascun cluster\cite{Kubat}.
+
+Il processo inizia con la selezione casuale di $k$ centroidi iniziali, uno per ciascun cluster, non necessariamente tra i valori interni al training set. Successivamente, l'algoritmo alterna due fasi principali:
+1) **Assegnazione dei punti ai cluster**: $k$-means analizza un esempio alla volta, calcolando le sue distanze da tutti i centroidi. Il centroide più vicino definisce quindi il cluster a cui l'esempio dovrebbe appartenere;
+2) **Aggiornamento dei centroidi**: per ciascun cluster, viene ricalcolato il centroide come media aritmetica dei punti assegnati al cluster stesso e lo si elegge come nuovo centro.
+
+Queste due fasi vengono ripetute fino al raggiungimento di una **condizione di arresto**, che può essere definita dal raggiungimento di un numero massimo di iterazioni o dal caso in cui le assegnazioni dei punti ai cluster non cambiano più tra un'iterazione e l'altra (ovvero, i centroidi si stabilizzano).
+
+L'algoritmo $k$-means è sensibile alla scelta dei centroidi iniziali, motivo per cui vengono spesso utilizzate tecniche apposite per migliorarne l'inizializzazione e ottenere risultati più stabili.
 
 -----
