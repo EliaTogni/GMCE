@@ -111,21 +111,25 @@
 - [x] Scrivere introduzione con perry romanowsky
 - [x] Capire come scrivere equazione di ricorrenza vincoli iterativi
 - [x] Riordinare codice GMCEGurobiTest2
-- [ ] Leggere sito online su 
 - [x] Aggregazione componenti con stessa qq
 - [x] Delineare struttura lavoro nel dettaglio e porre paletti su dove spingersi
-- [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
 - [x] Raccogliere risultati testing GMCEGurobiTest
+- [x] Aggiungere paragrafo sviluppi futuri
+- [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
+- [ ] Sistemare vincolo iterativo
+- [ ] Leggere sito online su Introduzione
+- [ ] Preparare cartella materiale
+- [ ] Costruire dataset finale delle formule -> componenti
+- [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
+- [ ] Pensare struttura software
+- [ ] UML software
+- [ ] Figma software
 - [ ] Spiegare risultati clustering
 - [ ] Spiegare risultati mlnn
-- [ ] In formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori? cercare paper a riguardo
-- [x] Aggiungere paragrafo sviluppi futuri
-- [ ] Chiedere a Ceselli quanto mostrare dei dati
+- [ ] In formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori? cercare paper a riguardo (Sviluppi futuri)
+- [ ] Chiedere a GianMaria quanto mostrare dei dati
 - [ ] Osservare tutta la parte di preprocessing e capire cosa mettere in tesi
-- [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
-- [ ] Costruire dataset finale delle formule -> componenti
 - [ ] Mostrare scelta di componenti alternative del modello a GMCE
-- [ ] Sistemare vincolo iterativo
 - [ ] 
 
 -----
