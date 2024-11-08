@@ -11,10 +11,10 @@
 		- Nomenclatura Internazionale degli Ingredienti Cosmetici
 		- Formule Qualiquantitative
 	- Intelligenza Artificiale e Machine Learning
-		- Unsupervised Learning
-			- KMeans
 		- Supervised Learning
 			- Multi Layer Neural Networks
+		- Unsupervised Learning
+			- KMeans
 - [[Metodologia]]
 	- Workflow
 	- Struttura del software
