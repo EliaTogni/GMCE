@@ -117,12 +117,16 @@
 - [x] Aggiungere paragrafo sviluppi futuri
 - [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
 - [x] Sistemare vincolo iterativo
+- [ ] Rivedere scaletta
+- [ ] Preparare cartella materiale
 - [ ] Leggere sito online su Introduzione
 - [ ] aggiungere articolo a bibtex
 - [ ] Testare con formula diversa
-- [ ] Provare su dataset condensato
-- [ ] Preparare cartella materiale
+- [ ] Provare su dataset condensato (creare GMCEGurobiTest3)
+- [ ] Scrivere file txt con significato di ogni file colab
+- [ ] Controllare contenuto di ciascun file colab
 - [ ] Costruire dataset finale delle formule -> componenti
+- [ ] 
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
 - [ ] Pensare struttura software
 - [ ] UML software
