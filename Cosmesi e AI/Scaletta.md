@@ -118,6 +118,7 @@
 - [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
 - [ ] Sistemare vincolo iterativo
 - [ ] Leggere sito online su Introduzione
+- [ ] aggiungere articolo a bibtex
 - [ ] Preparare cartella materiale
 - [ ] Costruire dataset finale delle formule -> componenti
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
