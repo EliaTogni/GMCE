@@ -116,9 +116,11 @@
 - [x] Raccogliere risultati testing GMCEGurobiTest
 - [x] Aggiungere paragrafo sviluppi futuri
 - [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
-- [ ] Sistemare vincolo iterativo
+- [x] Sistemare vincolo iterativo
 - [ ] Leggere sito online su Introduzione
 - [ ] aggiungere articolo a bibtex
+- [ ] Testare con formula diversa
+- [ ] Provare su dataset condensato
 - [ ] Preparare cartella materiale
 - [ ] Costruire dataset finale delle formule -> componenti
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
