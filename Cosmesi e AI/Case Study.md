@@ -1,3 +1,5 @@
+
+Paragrafo introduzione al case study
 # Struttura del Dataset
 
 | ta_nomedb                         | ta_descri                          | ta_esterna |     |

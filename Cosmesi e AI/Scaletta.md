@@ -22,18 +22,14 @@
 	- Modelli
 		- Modello Decisionale
 		- Modello di Clustering
-		- Multi Layer Neural Networks
+		- Modello di Multi Layer Neural Network
 - [[Tools e Environment]]
 	- HeidiSQL/Antares
 	- Python
 	-  Colab
 	- Gurobi
 - [[Case Study]]
-	- Struttura del Dataset
-		- Schema ER
-		- Tabelle
-	- Data Preprocessing
-		- 
+	- 
 - [[Analisi Sperimentale]]
 	- Nested Cross Validation
 	- Metriche di Valutazione delle Performance
@@ -118,7 +114,7 @@
 - [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
 - [x] Sistemare vincolo iterativo
 - [ ] Rivedere scaletta
-- [ ] Preparare cartella materiale
+- [x] Preparare cartella materiale
 - [ ] Leggere sito online su Introduzione
 - [ ] aggiungere articolo a bibtex
 - [ ] Testare con formula diversa

@@ -1,10 +1,12 @@
 # Workflow
 
+Comparazione tra workflow del formulatore e del software
 
 -----
 
 # Struttura del software
 
+figma -> mock del software
 
 -----
 
@@ -121,7 +123,7 @@ Prendere una formula, togliere tutte le componenti tenendo la composizione quali
 
 -----
 
-## Multi Layer Neural Network Model
+## Modello di Multi Layer Neural Network
 
 
 -----
