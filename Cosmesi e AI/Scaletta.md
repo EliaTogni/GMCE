@@ -115,7 +115,7 @@
 - [x] Sistemare vincolo iterativo
 - [x] Rivedere scaletta
 - [x] Preparare cartella materiale
-- [ ] Leggere sito online su Introduzione
+- [x] Leggere sito online su Introduzione
 - [ ] aggiungere articolo a bibtex
 - [ ] Testare con formula diversa
 - [ ] Provare su dataset condensato (creare GMCEGurobiTest3)
