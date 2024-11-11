@@ -113,7 +113,7 @@
 - [x] Aggiungere paragrafo sviluppi futuri
 - [x] Aggiungere vincoli iterativi a GMCEGurobiTest (check ChatGPT)
 - [x] Sistemare vincolo iterativo
-- [ ] Rivedere scaletta
+- [x] Rivedere scaletta
 - [x] Preparare cartella materiale
 - [ ] Leggere sito online su Introduzione
 - [ ] aggiungere articolo a bibtex
