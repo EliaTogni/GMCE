@@ -118,7 +118,7 @@
 - [x] Leggere sito online su Introduzione
 - [ ] aggiungere articolo a bibtex
 - [ ] Testare con formula diversa
-- [ ] Provare su dataset condensato (creare GMCEGurobiTest3)
+- [x] Provare su dataset condensato (creare GMCEGurobiTest3)
 - [ ] Scrivere file txt con significato di ogni file colab
 - [ ] Controllare contenuto di ciascun file colab
 - [ ] Costruire dataset finale delle formule -> componenti
