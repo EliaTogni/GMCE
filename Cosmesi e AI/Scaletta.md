@@ -119,6 +119,7 @@
 - [x] Rivedere scaletta
 - [x] Preparare cartella materiale
 - [x] Leggere sito online su Introduzione
+- [ ] Check seconda formula con tutti i colab
 - [ ] aggiungere articolo a bibtex
 - [ ] Testare con formula diversa
 - [x] Provare su dataset condensato (creare GMCEGurobiTest3)
