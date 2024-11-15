@@ -127,7 +127,7 @@
 - [ ] Scrivere file txt con significato di ogni file colab
 - [ ] Controllare contenuto di ciascun file colab
 - [ ] Costruire dataset finale delle formule -> componenti
-- [ ] 
+- [ ] Riscaricare CSV
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
 - [ ] Pensare struttura software
 - [ ] UML software
