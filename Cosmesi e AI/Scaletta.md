@@ -119,7 +119,7 @@
 - [x] Rivedere scaletta
 - [x] Preparare cartella materiale
 - [x] Leggere sito online su Introduzione
-- [ ] Check seconda formula con tutti i colab
+- [x] Check seconda formula con tutti i colab
 - [ ] Aggiungere visualizzazione DataFrame soluzioni alternative
 - [ ] aggiungere articolo a bibtex
 - [ ] Testare con formula diversa
