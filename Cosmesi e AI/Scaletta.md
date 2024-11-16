@@ -120,16 +120,20 @@
 - [x] Preparare cartella materiale
 - [x] Leggere sito online su Introduzione
 - [x] Check seconda formula con tutti i colab
-- [ ] Aggiungere visualizzazione DataFrame soluzioni alternative
-- [ ] aggiungere articolo a bibtex (elenco articoli)
-- [ ] Testare con formula diversa
 - [x] Provare su dataset condensato (creare GMCEGurobiTest3)
-- [ ] Scrivere file txt con significato di ogni file colab
-- [ ] Controllare contenuto di ciascun file colab
-- [ ] Costruire dataset finale delle formule -> componenti
 - [x] Riscaricare CSV
-- [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
-- [ ] Pensare struttura software
+- [ ] Aggiungere visualizzazione DataFrame soluzioni alternative
+- [ ] Controllare contenuto di ciascun file colab
+- [ ] Scrivere file txt con significato di ogni file colab
+- [ ] Fare elenco articoli utilizzati in Materiale
+- [ ] Scegliere formula diversa senza ricorsivitá
+- [ ] Selezionare in quali file Colab testare la nuova formula
+- [ ] Testare con formula diversa
+- [ ] Scrivere paragrafo per prima formula
+- [ ] Scrivere paragrafo per seconda formula
+- [ ] Comparare risultati e scrivere analisi
+- [ ] Costruire dataset finale delle formule -> componenti
+- [ ] Pensare struttura grafica software
 - [ ] UML software
 - [ ] Figma software
 - [ ] Spiegare risultati clustering
