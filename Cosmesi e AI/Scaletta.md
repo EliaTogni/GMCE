@@ -121,13 +121,13 @@
 - [x] Leggere sito online su Introduzione
 - [x] Check seconda formula con tutti i colab
 - [ ] Aggiungere visualizzazione DataFrame soluzioni alternative
-- [ ] aggiungere articolo a bibtex
+- [ ] aggiungere articolo a bibtex (elenco articoli)
 - [ ] Testare con formula diversa
 - [x] Provare su dataset condensato (creare GMCEGurobiTest3)
 - [ ] Scrivere file txt con significato di ogni file colab
 - [ ] Controllare contenuto di ciascun file colab
 - [ ] Costruire dataset finale delle formule -> componenti
-- [ ] Riscaricare CSV
+- [x] Riscaricare CSV
 - [ ] Testare GMCEGurobiTest con altre formule (almeno 3)
 - [ ] Pensare struttura software
 - [ ] UML software
