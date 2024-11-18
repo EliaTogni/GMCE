@@ -122,9 +122,12 @@
 - [x] Check seconda formula con tutti i colab
 - [x] Provare su dataset condensato (creare GMCEGurobiTest3)
 - [x] Riscaricare CSV
+- [ ] Scrivere file txt con significato di ogni file colab
+- [ ] Spiegare GMCE
+- [ ] Spiegare risultati clustering
+- [ ] Spiegare risultati mlnn
 - [ ] Aggiungere visualizzazione DataFrame soluzioni alternative
 - [ ] Controllare contenuto di ciascun file colab
-- [ ] Scrivere file txt con significato di ogni file colab
 - [ ] Fare elenco articoli utilizzati in Materiale
 - [ ] Scegliere formula diversa senza ricorsivitá
 - [ ] Selezionare in quali file Colab testare la nuova formula
@@ -136,8 +139,6 @@
 - [ ] Pensare struttura grafica software
 - [ ] UML software
 - [ ] Figma software
-- [ ] Spiegare risultati clustering
-- [ ] Spiegare risultati mlnn
 - [ ] In formumast.fo_colore, colori vicini in termini di codifica sono vicini anche nello spazio dei colori? cercare paper a riguardo (Sviluppi futuri)
 - [ ] Chiedere a GianMaria quanto mostrare dei dati
 - [ ] Osservare tutta la parte di preprocessing e capire cosa mettere in tesi
