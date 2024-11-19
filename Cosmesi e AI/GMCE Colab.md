@@ -61,7 +61,7 @@ Infatti dovrebbero essere 15 ma sono 18. I caratteri  'H', '3', e 'c' non dovreb
 
 Si tratta di un problema di classificazione in quanto le colonne di output rappresentano delle classi da classificare.
 
-#Il problema ora riguarda quale tecnica scegliere e come gestire la grande sparsità del dataset. Ho due macroidee: #la prima è di provare una tecnica unsupervised e vedere quanto la sparsità del dataset influisca sulla previsione #mentre la seconda comporta il considerare il tipo di prodotto estraendo la seconda lettera da "fo_codice".
+Il problema ora riguarda quale tecnica scegliere e come gestire la grande sparsità del dataset. Ho due macroidee: la prima è di provare una tecnica unsupervised e vedere quanto la sparsità del dataset influisca sulla previsione mentre la seconda comporta il considerare il tipo di prodotto estraendo la seconda lettera da "fo_codice".
 
 
 Provo a plottare inizialmente come sono fatti i cluster
