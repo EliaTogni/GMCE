@@ -8,13 +8,12 @@ Questo primo sheet di Google Colab ha lo scopo iniziale di permettere una inizia
 Il lavoro ruota attorno a modelli di apprendimento automatico. Il mio primo obiettivo è più uno "studio di fattibilità" tramite modelli più semplici. Invece di utilizzare tutte le colonne di output, ne uso inizialmente un sottoset. Devo quindi decidere quali output scegliere: se la famiglia dei prodotti (prodotti["pr_famiglia"] con 66 classi), il tipo di prodotto (seconda lettera di formumast["fo_codice"] con 15 classi) oppure la classe dei prodotti (prodotti["pr_classe"] con 25 classi). Ho optato per formumast["fo_codice"] grazie a insights fornitimi da ...
 
 I DataFrame da me realizzati in quanto ritenuti di mio futuro interesse sono:
-
 - Un DF contenente una tupla per ogni formula. Ogni tupla rappresenta la composizione QQ della formula. Nessuna colonna viene considerata come di output in quanto questo DataFrame verrà utilizzato per un training di un modello di unsupervised learning (clustering);
 - Un DF contenente una tupla per ogni formula. Ogni tupla rappresenta la composizione QQ della formula. Una singola colonna viene considerata come di output in quanto contiene il tipo di prodotto (estratto dalla seconda lettera di fo_codice). Ci sono in tutto 15 tipi di prodotti possibili nella tabella. Questo DataFrame verrà utilizzato per un training di un modello di learning supervised (MLNN con diverse architetture).
 
 La generazione di questi DataFrame ha numerosi step in comune, per poi differenziarsi negli ultimi passaggi.
 
-Le differenze in termini di cardinalità tra formumast_inci e formumast_inciestesa è dovuta a
+Le differenze in termini di cardinalità tra formumast_inci e formumast_inciestesa è dovuta a:
 - datasets non aggiornato backend side;
 - metalli in formumast_inci e non in formumast_inciestesa.
 Post aggiornamento dei dataset, la differenza di elementi unici si è ridotta a solo 11 elementi.
@@ -30,7 +29,7 @@ Per trovare tutte le tuple nel DataFrame "inciestesa_final" aventi lo stesso val
 
 Procedo quindi all'eliminazione delle feature che ho ritenuto irrilevanti ai fini della task di classificazione. Ho mantenuto solamente gli identifiers (i quali mi serviranno più avanti), i nomi INCI (che utilizzerò come nomi delle colonne della tabella pivot) e fi_qtainci. 
 
-#che fi_qtaincicompe. Nell'analisi, inizialmente, proverò ad utilizzare fi_qtainci. fi_qtaincicompe contiene le #quantità degli INCI dopo la lavorazione, ovvero ciò che va sull'etichetta del prodotto. Le due formule QQ #differiscono di poco ma ci sono delle regole nella scrittura dell'etichetta che andranno considerate #(id_inci_master).
+==che fi_qtaincicompe. Nell'analisi, inizialmente, proverò ad utilizzare fi_qtainci. fi_qtaincicompe contiene le quantità degli INCI dopo la lavorazione, ovvero ciò che va sull'etichetta del prodotto. Le due formule QQ differiscono di poco ma ci sono delle regole nella scrittura dell'etichetta che andranno considerate #(id_inci_master).
 
 Creo poi la tabella pivot avente come features i diversi nomi INCI corretti ed i corrispettivi valori. Sostituisco inoltre i valori NaN (ogniqualvolta un INCI non compare nella formula di un prodotto) con il valore 0. Come funzione di aggregazione ho scelto di utilizzare la somma nel caso compaia lo stesso INCI più volte per una formula. Tecnicamente non dovrebbe succedere ma in fase di testing ho notato che ci sono delle eccezioni.
 
@@ -46,15 +45,16 @@ Il primo degli step successivi è assicurarsi che tutti i codici contenuti in fo
 - codici che finiscono con una o più K;
 - codici lunghi meno di 3 caratteri o più di 20;
 
-==spiegazione==
+==spiegazione di come vengono gestiti
 
 Definisco quindi una funzione per controllare che il contenuto sia valido, ovvero che il totale della composizione QQ degli INCI raggiunga il 100%. Ho prima testato questa funzione su un sottoset di prova, per via delle ridotte dimensioni.
 
 ===paragrafo ulteriore di spiegazione del codice===
 
-La cifra mi ha insospettito ma il totale fa davvero 113.86 anche dal software. Quindi creo un dizionario per tutti gli fo_codici e scarto quelli il cui totale sia diverso da 100% + \varepsilon. 
+La cifra mi ha insospettito ma il totale fa davvero 113.86 anche dal software. Quindi creo un dizionario per tutti gli fo_codici e scarto quelli il cui totale sia diverso da 100% + $\varepsilon$. 
 
-#Il tutto ci mette circa 5 minuti ed é il collo di bottiglia del processo dal punto di vista della RAM.
+==Il tutto ci mette circa 5 minuti ed é il collo di bottiglia del processo dal punto di vista della RAM.
+
 Ci sono circa 10k codici duplicati.
 
 Ora rimuovo tutte le tuple in cui il secondo carattere di fo_codice (identificativo del tipo di prodotto) non corrisponde ad alcun tipo di prodotto conosciuto. Inoltre, proseguendo con gli step, ho notato che probabilmente il numero di caratteri in seconda posizione in fo_codice è maggiore di quelli previsti dalla struttura delle formule di Ancorotti. Allora ho aggiunto questo blocco di codice che esclude le tuple errate. Questa fase di preprocessing sta inevitabilmente sfoltendo molto il dataset.
