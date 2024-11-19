@@ -49,17 +49,13 @@ In quanto ho appurato che le formule inserite sono formule effettive, anche se i
 
 Definisco quindi una funzione per controllare che tali formule siano valide, ovvero che il totale della composizione QQ degli INCI raggiunga il 100%. Ho prima testato questa funzione su un sottoset di prova, per via delle ridotte dimensioni.
 
-===paragrafo ulteriore di spiegazione del codice===
-
-La cifra mi ha insospettito ma il totale fa davvero 113.86 anche dal software. Quindi creo un dizionario per tutti gli fo_codici e scarto quelli il cui totale sia diverso da 100% + $\varepsilon$. 
-
-==Il tutto ci mette circa 5 minuti ed é il collo di bottiglia del processo dal punto di vista della RAM.
+Per via dei risultati ottenuti dal sottoset, ho scoperto che numerose formule hanno una composizione QQ molto diversa dall'atteso $100\%$. Ho, quindi, creato un dizionario per tutti gli fo_codici e scarto quelli il cui totale sia diverso da 100% + $\varepsilon$. 
 
 Ci sono circa 10k codici duplicati.
 
 Ora rimuovo tutte le tuple in cui il secondo carattere di fo_codice (identificativo del tipo di prodotto) non corrisponde ad alcun tipo di prodotto conosciuto. Inoltre, proseguendo con gli step, ho notato che probabilmente il numero di caratteri in seconda posizione in fo_codice è maggiore di quelli previsti dalla struttura delle formule di Ancorotti. Allora ho aggiunto questo blocco di codice che esclude le tuple errate. Questa fase di preprocessing sta inevitabilmente sfoltendo molto il dataset.
 
-Infatti dovrebbero essere 15 ma sono 18. Non benissimo pt. 2. H, 3, e c non dovrebbero esistere.
+Infatti dovrebbero essere 15 ma sono 18. I caratteri  'H', '3', e 'c' non dovrebbero esistere nella seconda posizione della formula
 
 ## Modelli
 
