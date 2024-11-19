@@ -45,9 +45,9 @@ Il primo degli step successivi è assicurarsi che tutti i codici contenuti in fo
 - codici che finiscono con una o più K;
 - codici lunghi meno di 3 caratteri o più di 20;
 
-==spiegazione di come vengono gestiti
+In quanto ho appurato che le formule inserite sono formule effettive, anche se in alcuni casi obsolete (e, quindi, segnate da una particolare nomenclatura come il carattere $k$ alla fine dell'identifier), ho scelto di utilizzare solo le formule complete, cioé quelle in cui la composizione QualiQuantitative raggiunge il $100\%$.
 
-Definisco quindi una funzione per controllare che il contenuto sia valido, ovvero che il totale della composizione QQ degli INCI raggiunga il 100%. Ho prima testato questa funzione su un sottoset di prova, per via delle ridotte dimensioni.
+Definisco quindi una funzione per controllare che tali formule siano valide, ovvero che il totale della composizione QQ degli INCI raggiunga il 100%. Ho prima testato questa funzione su un sottoset di prova, per via delle ridotte dimensioni.
 
 ===paragrafo ulteriore di spiegazione del codice===
 
