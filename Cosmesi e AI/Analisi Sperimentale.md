@@ -1,14 +1,11 @@
-# Nested Cross Validation
+# Metriche di Valutazione delle Performance
+## Matrice di Confusione
+La **matrice di confusione** è uno strumento fondamentale per valutare le prestazioni di algoritmi di classificazione supervisionata, ma il suo utilizzo per il clustering, che è un metodo non supervisionato, richiede un'assegnazione dei cluster ai gruppi reali (se disponibili). Per un algoritmo di clustering, la matrice di confusione viene costruita confrontando le etichette reali (se note) con le etichette di cluster predette. Ogni riga della matrice rappresenta una classe reale, mentre ogni colonna rappresenta un cluster assegnato. La cella $i,j$ indica quante istanze della classe $i$ sono state assegnate al cluster $j$. Da questa matrice si possono derivare metriche come l'accuratezza, la precisione, il richiamo e l'$F1$-score per valutare la qualità dell'assegnazione dei cluster rispetto alle etichette note. Tuttavia, poiché il clustering è intrinsecamente non supervisionato, queste analisi sono possibili solo in presenza di ground truth e non sono sempre applicabili nei casi reali.
 
 -----
 
-# Metriche di Valutazione delle Performance
-## Matrice di Confusione
-La matrice di confusione è uno strumento fondamentale per valutare le prestazioni di algoritmi di classificazione supervisionata, ma il suo utilizzo per il clustering, che è un metodo non supervisionato, richiede un'assegnazione dei cluster ai gruppi reali (se disponibili). Per un algoritmo di clustering, la matrice di confusione viene costruita confrontando le etichette reali (se note) con le etichette di cluster predette. Ogni riga della matrice rappresenta una classe reale, mentre ogni colonna rappresenta un cluster assegnato. La cella i,ji,ji,j indica quante istanze della classe iii sono state assegnate al cluster jjj. Da questa matrice si possono derivare metriche come l'accuratezza, la precisione, il richiamo e l'F1-score per valutare la qualità dell'assegnazione dei cluster rispetto alle etichette note. Tuttavia, poiché il clustering è intrinsecamente non supervisionato, queste analisi sono possibili solo in presenza di ground truth e non sono sempre applicabili nei casi reali.
-
-
 ## Indici di valutazione dei Clustering
-Quando si confrontano i cluster di dati, è importante considerare le caratteristiche specifiche e i requisiti dei dati stessi. Per valutare l'efficacia delle nostre tecniche nell'identificare prodotti chimici dai campioni forniti, abbiamo utilizzato i seguenti indici:
+Quando si esegue il confronto tra cluster di dati, è importante considerare le caratteristiche specifiche e i requisiti dei dati stessi. ==Per valutare l'efficacia delle tecniche nell'identificare prodotti chimici dai campioni forniti==, sono stati utilizzato i seguenti indici:
 - **Indice di Rand** (**RI**): l'RI è una misura statistica utilizzata nel clustering dei dati per valutare la somiglianza tra due cluster. Il range di questo indice varia da $0$ a $1$, dove $0$ significa che non c'è accordo tra i due cluster di dati su alcuna coppia di punti dati e $1$ significa accordo perfetto, cioè i cluster di dati sono identici. Questa misura conta quante coppie di oggetti sono negli stessi cluster sia in C$_1$ che in C$_2$ (indicate da $n_{11}$) e quante coppie sono in cluster diversi sia in C$_1$ che in C$_2$ (indicate da $n_{00}$), considerando tutte le possibili combinazioni\cite{Gliozzo1, Wagner}. L'Indice di Rand R è calcolato come:
 
 $$R(C_1, C_2) = \frac{2(n_{00} + n_{11})}{n (n -1)} = \frac{n_{00} + n_{11}}{n_{00} + n_{10} + n_{01} + n_{11}}$$
