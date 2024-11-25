@@ -3,6 +3,9 @@
 -----
 
 # Metriche di Valutazione delle Performance
+## Matrice di Confusione
+La matrice di confusione è uno strumento fondamentale per valutare le prestazioni di algoritmi di classificazione supervisionata, ma il suo utilizzo per il clustering, che è un metodo non supervisionato, richiede un'assegnazione dei cluster ai gruppi reali (se disponibili). Per un algoritmo di clustering, la matrice di confusione viene costruita confrontando le etichette reali (se note) con le etichette di cluster predette. Ogni riga della matrice rappresenta una classe reale, mentre ogni colonna rappresenta un cluster assegnato. La cella i,ji,ji,j indica quante istanze della classe iii sono state assegnate al cluster jjj. Da questa matrice si possono derivare metriche come l'accuratezza, la precisione, il richiamo e l'F1-score per valutare la qualità dell'assegnazione dei cluster rispetto alle etichette note. Tuttavia, poiché il clustering è intrinsecamente non supervisionato, queste analisi sono possibili solo in presenza di ground truth e non sono sempre applicabili nei casi reali.
+
 
 ## Indici di valutazione dei Clustering
 Quando si confrontano i cluster di dati, è importante considerare le caratteristiche specifiche e i requisiti dei dati stessi. Per valutare l'efficacia delle nostre tecniche nell'identificare prodotti chimici dai campioni forniti, abbiamo utilizzato i seguenti indici:
@@ -123,6 +126,7 @@ Il clustering é stato quindi effettuato scegliendo 12 come numero di cluster in
 -----
 
 # Valutazione della stabilità
+==da skippare==
 
 Tools per la stabilità:
 [https://www.cir-safety.org/about](https://www.cir-safety.org/about)
