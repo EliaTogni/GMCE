@@ -27,9 +27,7 @@ Per trovare tutte le tuple nel DataFrame "inciestesa_final" aventi lo stesso val
 - filtrare i gruppi aventi più di un valore unico di fi_inciname;
 - utilizzare questi gruppi per filtrare il DataFrame originale.
 
-Procedo quindi all'eliminazione delle feature che ho ritenuto irrilevanti ai fini della task di classificazione. Ho mantenuto solamente gli identifiers (i quali mi serviranno più avanti), i nomi INCI (che utilizzerò come nomi delle colonne della tabella pivot) e fi_qtainci. 
-
-==che fi_qtaincicompe. Nell'analisi, inizialmente, proverò ad utilizzare fi_qtainci. fi_qtaincicompe contiene le quantità degli INCI dopo la lavorazione, ovvero ciò che va sull'etichetta del prodotto. Le due formule QQ differiscono di poco ma ci sono delle regole nella scrittura dell'etichetta che andranno considerate #(id_inci_master).
+Procedo quindi all'eliminazione delle feature che ho ritenuto irrilevanti ai fini della task di classificazione. Ho mantenuto solamente gli identifiers (i quali mi serviranno più avanti), i nomi INCI (che utilizzerò come nomi delle colonne della tabella pivot) e fi_qtainci. Ho anche la possibilitá di utilizzare la formula post-lavorazione, cioé ció che rimane in seguito a tutte le trasformazioni chimiche. Ho peró ritenuto che questo non fosse di mio interesse in quanto é nostra intenzione ragionare a monte del procedimento di formulazione.
 
 Creo poi la tabella pivot avente come features i diversi nomi INCI corretti ed i corrispettivi valori. Sostituisco inoltre i valori NaN (ogniqualvolta un INCI non compare nella formula di un prodotto) con il valore 0. Come funzione di aggregazione ho scelto di utilizzare la somma nel caso compaia lo stesso INCI più volte per una formula. Tecnicamente non dovrebbe succedere ma in fase di testing ho notato che ci sono delle eccezioni.
 
@@ -58,26 +56,29 @@ Ora rimuovo tutte le tuple in cui il secondo carattere di fo_codice (identificat
 Infatti dovrebbero essere 15 ma sono 18. I caratteri  'H', '3', e 'c' non dovrebbero esistere nella seconda posizione della formula
 
 ## Modelli
+### Modelli di Apprendimento non supervisionato
+Decido di utilizzare, come giá anticipato, un DataFrame contenente una tupla per ogni formula. Ogni tupla rappresenta la composizione QQ della formula. Nessuna colonna viene considerata come di output in quanto questo DataFrame verrà utilizzato per un training di un modello di unsupervised learning (clustering);
 
-Si tratta di un problema di classificazione in quanto le colonne di output rappresentano delle classi da classificare.
+Avró quindi un vettore, non utilizzato dal modello, contenente la tipologia di prodotto di ciascuna formula.
 
-Il problema ora riguarda quale tecnica scegliere e come gestire la grande sparsità del dataset. Ho due macroidee: la prima è di provare una tecnica unsupervised e vedere quanto la sparsità del dataset influisca sulla previsione mentre la seconda comporta il considerare il tipo di prodotto estraendo la seconda lettera da "fo_codice".
+Provo a rappresentare graficamente come sono inizialmente fatti i cluster.
 
+![[Pasted image 20241125171310.png]]
 
-Provo a plottare inizialmente come sono fatti i cluster
-
-immagine 1 e 2
+![[Pasted image 20241125171306.png]]
 
 Alcuni cluster (come il 2 e il 7) appaiono molto distinti e separati, mentre altri cluster (come il 3 e il 5) sono più vicini e potenzialmente sovrapposti, suggerendo che i dati in queste aree potrebbero avere caratteristiche simili e non essere facilmente separabili. Altri cluster, come l'11 (viola chiaro) e il 10 (grigio), sono più diffusi, indicando una maggiore variabilità all'interno del cluster.
 
 Prima Componente (PCA1): Probabilmente cattura la maggior parte della varianza nei dati, con cluster distesi lungo questa direzione
 
+Per valutare la bontà dei cluster ottenuti posso usare differenti metriche, citate nella sezione .
+
 
 Alcuni cluster (es. cluster 1) contengono una gran parte dei campioni, indicando uno sbilanciamento. Questo potrebbe significare che il modello di clustering sta sovra-aggregando alcuni dati. Nel cluster 1, c'è una confusione significativa tra molte classi reali, indicando che il clustering non sta separando bene le classi.
 Diversi cluster hanno pochissimi campioni, il che potrebbe significare che non sono utili nella rappresentazione di alcuna classe.
 Potrebbe essere utile rivedere il numero di cluster utilizzato. Forse un diverso valore di num_clusters potrebbe migliorare la separazione tra le classi.
-o
-Per valutare la bontà dei clusters posso usare differenti metriche (descritte su overleaf come il jaccard index)
+
+
 
 -----
 
