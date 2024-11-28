@@ -67,7 +67,7 @@ Provo a rappresentare graficamente come sono inizialmente fatti i cluster.
 
 ![[Pasted image 20241125171306.png]]
 
-Alcuni cluster (come il 2 e il 7) appaiono molto distinti e separati, mentre altri cluster (come il 3 e il 5) sono più vicini e potenzialmente sovrapposti, suggerendo che i dati in queste aree potrebbero avere caratteristiche simili e non essere facilmente separabili. Altri cluster, come l'11 (viola chiaro) e il 10 (grigio), sono più diffusi, indicando una maggiore variabilità all'interno del cluster.
+Alcuni cluster (come il 2 ed il 7) appaiono molto distinti e separati, mentre altri cluster (come il 3 ed il 5) sono più vicini e potenzialmente sovrapposti. Questa loro disposizione suggerisce che i dati in queste aree potrebbero avere caratteristiche simili e non essere facilmente separabili. Altri cluster, come l'11 (viola chiaro) e il 10 (grigio), sono più diffusi, indicando una maggiore variabilità all'interno del cluster.
 
 Prima Componente (PCA1): Probabilmente cattura la maggior parte della varianza nei dati, con cluster distesi lungo questa direzione
 
