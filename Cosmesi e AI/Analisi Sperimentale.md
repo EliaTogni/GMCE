@@ -56,8 +56,6 @@ Poichè la valutazione della bontà di una sostituzione necessita di competenze 
 
 -----
 
-Strutturare raccolta dati per testing di GMCEGurobiTest
-
 Una delle tecniche di testing della bontá del modello consiste nel fornire a tale modello solamente la composizione qualiquantitative della formula iniziale e lasciargli libertá totale di scelta nella selezione delle componenti da inserire nella formula.
 
 Questo approccio, nel dettaglio, consiste in un loop di iterazioni del modello di ottimizzazione proposto precedentemente. Ogni iterazione proporrá una nuova soluzione e introdurrá un nuovo vincolo, con lo scopo di escludere la soluzione proposta da tutte le iterazioni successive.
