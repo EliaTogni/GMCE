@@ -71,8 +71,7 @@ Alcuni cluster (come il 2 ed il 7) appaiono molto distinti e separati, mentre al
 
 Prima Componente (PCA1): Probabilmente cattura la maggior parte della varianza nei dati, con cluster distesi lungo questa direzione
 
-Per valutare la bontà dei cluster ottenuti posso usare differenti metriche, citate nella sezione .
-
+Per valutare la bontà dei cluster ottenuti posso usare differenti metriche, citate nella sezione ==nome sezione==.
 
 Alcuni cluster (es. cluster 1) contengono una gran parte dei campioni, indicando uno sbilanciamento. Questo potrebbe significare che il modello di clustering sta sovra-aggregando alcuni dati. Nel cluster 1, c'è una confusione significativa tra molte classi reali, indicando che il clustering non sta separando bene le classi.
 Diversi cluster hanno pochissimi campioni, il che potrebbe significare che non sono utili nella rappresentazione di alcuna classe.
