@@ -126,8 +126,6 @@ L'identificazione visiva di tali insiemi in uno spazio bidimensionale o tridimen
 
 L'input degli algoritmi di cluster è un insieme di esempi, ciascuno descritto da un vettore di valori di attributi, ma senza etichette di classe. L'output, invece, è un insieme di due o più cluster di esempi. 
 
-==È comune che tutti (o quasi tutti) gli esempi all'interno di un cluster appartengano alla stessa classe. In tal caso, lo sviluppatore di un software di apprendimento supervisionato potrebbe decidere di identificare prima i cluster e poi di assegnare a ciascun cluster l'etichetta della sua classe dominante.==
-
 #### $K$-Means
 L'algoritmo **$k$-means** é uno dei piú semplici metodi di clustering iterativo non supervisionato, il quale viene utilizzato per partizionare un insieme di dati in $k$ cluster, dove $k$ è un numero predefinito di cluster scelto dall’utente. L’obiettivo dell’algoritmo è minimizzare la somma delle distanze al quadrato tra ciascun punto e il **centroide** del cluster a cui appartiene, riducendo così la varianza all'interno di ciascun cluster\cite{Kubat}.
 
